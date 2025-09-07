@@ -1,25 +1,161 @@
-# Laby Blog
+<div align="center">
+  <h1>DaisyUI Blog</h1>
+  <p>🌸 A modern, responsive personal blog and portfolio system</p>
+  <p>
+    <img src="https://img.shields.io/badge/React-18.2.0-blue?logo=react" alt="React" />
+    <img src="https://img.shields.io/badge/TypeScript-5.2.2-blue?logo=typescript" alt="TypeScript" />
+    <img src="https://img.shields.io/badge/Tailwind-3.4.1-blue?logo=tailwindcss" alt="Tailwind" />
+    <img src="https://img.shields.io/badge/DaisyUI-5.1.7-blue" alt="DaisyUI" />
+    <img src="https://img.shields.io/badge/license-MIT-green" alt="License" />
+  </p>
+  <p>
+    <a href="https://github.com/MasterLiu93/daisyui-blog/stargazers">
+      <img src="https://img.shields.io/github/stars/MasterLiu93/daisyui-blog" alt="Stars" />
+    </a>
+    <a href="https://github.com/MasterLiu93/daisyui-blog/network/members">
+      <img src="https://img.shields.io/github/forks/MasterLiu93/daisyui-blog" alt="Forks" />
+    </a>
+    <a href="https://github.com/MasterLiu93/daisyui-blog/issues">
+      <img src="https://img.shields.io/github/issues/MasterLiu93/daisyui-blog" alt="Issues" />
+    </a>
+  </p>
+  <p>
+    <a href="README.md">中文</a> | 
+    <a href="README-EN.md">English</a>
+  </p>
+</div>
 
-A modern, responsive personal blog and portfolio website built with React, TypeScript, and Tailwind CSS. Features multi-language support, rich animations, and theme customization.
+## ✨ Introduction
 
-[中文](README.md) | English
+DaisyUI Blog is a modern personal blog and portfolio showcase system built with React, TypeScript, and Tailwind CSS. It provides rich animations, multilingual support, theme switching, and responsive design, making it perfect for developers to showcase personal projects and write technical blogs.
 
-## ✨ Features
+<div align="center">
+  <img src="public/images/system/Home.png" alt="Home Preview" width="80%" />
+</div>
 
-- 🌓 Light/Dark mode toggle with 28 preset themes
-- 🌍 Complete multi-language support (English, Chinese) with modular translation files
-- 📱 Fully responsive design for all screen sizes (mobile, tablet, desktop)
-- ✨ Advanced animations and interactions (scroll animations, hover effects, page transitions)
-- 🎨 DaisyUI-based customizable theme color system
-- 📝 Complete blog system (post listing, categories, tags, search)
-- 🖼️ Project portfolio display (filtering, detail modals)
-- 📊 Data visualization and skills showcase components
-- 📞 Fully functional contact form
-- 🔍 Sitewide content search functionality
-- 🧩 Strict modular component design
-- 🌐 Particle animation backgrounds and 3D tech stack display
+## 🚀 Features
 
-## 🛠️ Detailed Tech Stack
+- **Multiple Themes** - 28 beautiful preset themes, including light/dark modes
+- **Internationalization** - Complete multilingual support (English/Chinese) with modular translation files
+- **Responsive Design** - Perfect adaptation for mobile devices, tablets, and desktops
+- **Advanced Animations** - Rich interactive animations and transitions based on Framer Motion
+- **Modular Design** - Strict component encapsulation and code organization
+- **Built-in Components** - Includes blog system, project showcase, skills display, 3D tech stack, and more
+- **Performance Optimization** - Using React best practices for a smooth experience
+
+## 🔥 Previews
+
+<table>
+  <tr>
+    <td width="33%">
+      <img src="public/images/system/Projects.png" alt="Projects" />
+      <p align="center">Projects Showcase</p>
+    </td>
+    <td width="33%">
+      <img src="public/images/system/Blog.png" alt="Blog" />
+      <p align="center">Blog System</p>
+    </td>
+    <td width="33%">
+      <img src="public/images/system/About.png" alt="About" />
+      <p align="center">About Page</p>
+    </td>
+  </tr>
+</table>
+
+## 🛠️ Tech Stack
+
+- **Frontend Framework:** React 18
+- **Type System:** TypeScript
+- **Build Tool:** Vite
+- **Styling:** Tailwind CSS + DaisyUI
+- **Animation:** Framer Motion
+- **Routing:** React Router v6
+- **Internationalization:** React-i18next
+- **State Management:** React Hooks
+
+See [Detailed Tech Stack](#detailed-tech-stack) for more information.
+
+## 📦 Quick Start
+
+### Online Demo
+
+- [Example Site](#) _(Coming soon)_
+
+### Local Development
+
+```bash
+# Clone the repository
+git clone https://github.com/MasterLiu93/daisyui-blog.git
+
+# Enter the project directory
+cd daisyui-blog
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
+
+# Build for production
+npm run build
+```
+
+## 🧩 Project Structure
+
+```
+daisyui-blog/
+├── public/               # Static assets
+│   └── images/           # Image resources
+├── src/
+│   ├── components/       # Reusable components
+│   ├── pages/            # Page components
+│   ├── i18n/             # Internationalization files
+│   │   └── locales/      # Translation files
+│   ├── assets/           # Other assets
+│   ├── App.tsx           # Root application component
+│   └── main.tsx          # Entry file
+└── README.md
+```
+
+## ⚙️ Configuration
+
+### Theme Configuration
+
+The project supports 28 beautiful themes, managed by DaisyUI:
+
+```js
+// tailwind.config.js
+module.exports = {
+  // ...other configurations
+  daisyui: {
+    themes: [
+      "light", "dark", "cupcake", "bumblebee", "emerald",
+      // ... more themes
+    ],
+  },
+}
+```
+
+### Adding New Languages
+
+1. Copy existing translation files
+2. Translate content
+3. Register the new language in `src/i18n/index.ts`
+
+```js
+// src/i18n/index.ts
+i18n.init({
+  resources: {
+    en: { translation: { /* English translations */ } },
+    zh: { translation: { /* Chinese translations */ } },
+    // Add new language
+    fr: { translation: { /* French translations */ } }
+  },
+  // ... other configurations
+});
+```
+
+## <a name="detailed-tech-stack"></a>🔧 Detailed Tech Stack
 
 ### Core Technologies
 - **React 18.2.0**: JavaScript library for building user interfaces
@@ -33,266 +169,53 @@ A modern, responsive personal blog and portfolio website built with React, TypeS
 - **PostCSS 8.4.36**: CSS transformation tool
 - **Autoprefixer 10.4.17**: Automatic CSS prefix addition
 
-### Routing & State Management
-- **React Router 6.22.3**: Declarative routing management
-- **React Hooks**: State management and lifecycle control
-  - useState: Component state management
-  - useEffect: Side effect handling
-  - useRef: DOM references and value persistence
-  - useMemo: Computation result caching optimization
-  - useCallback: Function reference optimization
+### More Technical Details
+- **State Management**: React Hooks (useState, useEffect, useRef, useMemo, useCallback)
+- **Animation**: Framer Motion 11.0.8 (page transitions, scroll triggers, gesture responses, advanced path animations)
+- **Internationalization**: react-i18next 14.1.0 + i18next 23.10.1
+- **Special Features**: Canvas API (particle backgrounds), Intersection Observer API (scroll animations)
 
-### Animation & Interaction
-- **Framer Motion 11.0.8**: Animation library for React
-  - Page transition animations
-  - Scroll-triggered animations
-  - Gesture responses
-  - Advanced path animations
+## 📋 Features
 
-### Internationalization
-- **react-i18next 14.1.0**: React internationalization library
-- **i18next 23.10.1**: Underlying internationalization framework
-- **i18next-browser-languagedetector 7.2.0**: Browser language detection
+- ✅ Home - Dynamic hero section, skills showcase, portfolio preview, blog preview
+- ✅ About - Personal introduction, detailed skills, work history
+- ✅ Projects - Filterable project showcase, project detail modals
+- ✅ Blog - Article listings, category filtering, tag cloud, search functionality
+- ✅ Contact - Contact form, FAQ, location information
+- ✅ Multilingual - Complete English and Chinese support, easily extendable
+- ✅ Theme System - 28 preset themes, switch with one click
 
-### Development Tools
-- **ESLint 9.0.0**: Code quality checking
-- **TypeScript ESLint 7.4.0**: TypeScript code standardization checking
-- **Vite Plugin React 3.3.1**: React integration optimization
+## 🤝 Contribution Guide
 
-### Special Feature Implementation
-- **Canvas API**: Used for particle background effects
-- **Intersection Observer API**: Implementing scroll-triggered animations
-- **Web Animations API**: Enhanced animation performance
+Contributions to code, issues, or feature requests are welcome!
 
-## 📦 Installation
+1. Fork the repository
+2. Create your feature branch: `git checkout -b my-new-feature`
+3. Commit your changes: `git commit -m 'Add some feature'`
+4. Push to the branch: `git push origin my-new-feature`
+5. Submit a Pull Request
 
-1. Clone the repository
+## 📜 License
 
-```bash
-git clone https://github.com/MasterLiu93/daisyui-blog.git
-cd laby-blog
-```
+[MIT License](LICENSE) © MasterLiu93
 
-2. Install dependencies
+## 💖 Acknowledgments
 
-```bash
-npm install
-```
+- [React](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [DaisyUI](https://daisyui.com/)
+- [Framer Motion](https://www.framer.com/motion/)
+- [React Router](https://reactrouter.com/)
+- [React-i18next](https://react.i18next.com/)
 
-3. Start the development server
+---
 
-```bash
-npm run dev
-```
-
-4. Build for production
-
-```bash
-npm run build
-```
-
-## 🚀 Usage
-
-### Project Structure
-
-```
-laby-blog/
-  |- public/              # Static assets
-  |   |- images/          # Image resources
-  |     |- blog/          # Blog images
-  |     |- projects/      # Project images
-  |     |- user/          # User-related images
-  |- src/
-      |- components/      # Reusable components
-      |   |- CounterSection.tsx      # Number counter component
-      |   |- Footer.tsx              # Footer component
-      |   |- Hero.tsx                # Hero section component
-      |   |- LanguageSwitcher.tsx    # Language switcher
-      |   |- Layout.tsx              # Layout component
-      |   |- ParticleBackground.tsx  # Particle background
-      |   |- SectionTitle.tsx        # Section title component
-      |   |- SkillsShowcase.tsx      # Skills showcase component
-      |   |- TechStackGlobe.tsx      # Tech stack 3D globe component
-      |   |- TestimonialsCarousel.tsx # Testimonials carousel component
-      |- pages/           # Page components
-      |   |- Home.tsx     # Home page
-      |   |- About.tsx    # About page
-      |   |- Projects.tsx # Projects page
-      |   |- Blog.tsx     # Blog page
-      |   |- Contact.tsx  # Contact page
-      |- i18n/            # Internationalization files
-      |   |- locales/     # Translation files
-      |       |- common/  # Common translations
-      |       |- pages/   # Page-specific translations
-      |         |- home/       # Home page translations
-      |         |- about/      # About page translations
-      |         |- projects/   # Projects page translations
-      |         |- blog/       # Blog page translations
-      |         |- contact/    # Contact page translations
-      |- assets/          # Other assets
-      |- App.tsx          # Root application component
-      |- main.tsx         # Entry file
-```
-
-### Feature Module Details
-
-#### 1. Theme System
-Uses DaisyUI's theme mechanism, supporting 28 preset themes and custom themes. Theme switching is persisted via localStorage for user preferences.
-
-```typescript
-// Theme switching example code
-const setTheme = (theme: string) => {
-  localStorage.setItem('theme', theme);
-  document.documentElement.setAttribute('data-theme', theme);
-};
-```
-
-#### 2. Internationalization System
-Multi-language system built on react-i18next, organized in a modular way:
-
-```
-i18n/
-  |- index.ts            # Configuration and initialization
-  |- locales/            # Translation files
-      |- common/         # Common translations
-        |- en.json       # English common
-        |- zh.json       # Chinese common
-      |- pages/          # Page-specific translations
-        |- home/         # Home page translations
-          |- en.json     # English
-          |- zh.json     # Chinese
-        |- about/        # And so on...
-```
-
-#### 3. Animation System
-Various animation effects implemented using Framer Motion and CSS:
-- Scroll-triggered animations
-- Hover interaction effects
-- Page transition animations
-- Particle background effects
-- 3D tech stack display
-
-#### 4. Responsive Layout
-Using Tailwind's responsive classes to ensure good display on all devices:
-- Mobile-first design
-- Breakpoint system (sm, md, lg, xl, 2xl)
-- Grid layout and flexbox models
-
-### Customizing Content
-
-1. **Personal Information**: Modify translation files in `src/i18n/locales/` directory to update personal information.
-
-2. **Projects and Blog Posts**: Update project and blog content in `src/i18n/locales/pages/projects/` and `src/i18n/locales/pages/blog/`.
-
-3. **Images**: Replace image assets in the `public/images/` directory.
-
-4. **Theme Colors**: Modify the DaisyUI theme configuration to customize the color scheme.
-
-### Internationalization in Detail
-
-The project uses react-i18next for internationalization management, organized in a modular fashion:
-
-```typescript
-// i18n configuration example
-i18n
-  .use(LanguageDetector)
-  .use(initReactI18next)
-  .init({
-    resources: {
-      en: {
-        translation: {
-          ...enCommon,
-          home: enHome,
-          about: enAbout,
-          projects: enProjects,
-          blog: enBlog,
-          contact: enContact
-        }
-      },
-      zh: {
-        translation: {
-          ...zhCommon,
-          home: zhHome,
-          about: zhAbout,
-          projects: zhProjects,
-          blog: zhBlog,
-          contact: zhContact
-        }
-      }
-    },
-    fallbackLng: 'zh',
-    debug: import.meta.env.DEV,
-    
-    interpolation: {
-      escapeValue: false,
-    },
-    
-    detection: {
-      order: ['localStorage', 'navigator'],
-      caches: ['localStorage'],
-    },
-  });
-```
-
-To add a new language, copy existing translation files and translate them, then register the new language in `src/i18n/index.ts`.
-
-## 📸 Screenshots
-
-Below are screenshots of the main pages, showcasing the overall design style and implemented features:
-
-![Home Page](/public/images/system/Home.png)
-
-![About Page](/public/images/system/About.png)
-
-![Projects Page](/public/images/system/Projects.png)
-
-![Blog Page](/public/images/system/Blog.png)
-
-![Contact Page](/public/images/system/Contact.png)
-
-## 🔧 Advanced Configuration
-
-### Customizing Themes
-
-This project uses DaisyUI for theme management, supporting multiple preset themes and custom themes:
-
-```typescript
-// tailwind.config.js example
-module.exports = {
-  // ...other configurations
-  daisyui: {
-    themes: [
-      "light", "dark", "cupcake", "bumblebee", "emerald", "corporate", 
-      "synthwave", "retro", "cyberpunk", "valentine", "halloween", 
-      "garden", "forest", "aqua", "lofi", "pastel", "fantasy", 
-      "wireframe", "black", "luxury", "dracula", "cmyk", "autumn", 
-      "business", "acid", "lemonade", "night", "coffee", "winter"
-    ],
-  },
-}
-```
-
-To modify the theme configuration, refer to the DaisyUI documentation: https://daisyui.com/docs/themes/
-
-### Adding New Pages
-
-1. Create a new page component in `src/pages/`
-2. Add a new route in `src/App.tsx`
-3. Add corresponding translation content in the internationalization files
-
-### Performance Optimizations
-
-The project has implemented various performance optimization measures:
-- React.memo for avoiding unnecessary re-renders
-- useMemo/useCallback for optimizing computation-intensive operations
-- Image lazy loading
-- Dynamic component imports
-- Vite build optimizations
-
-## 🤝 Contributing
-
-Contributions are welcome! Feel free to submit a Pull Request or create an Issue!
-
-## 📄 License
-
-[MIT](LICENSE) 
+<div align="center">
+  <p>⭐ If this project helped you, please give it a star! ⭐</p>
+  <p>
+    <a href="https://github.com/MasterLiu93">
+      <img src="https://img.shields.io/badge/GitHub-MasterLiu93-181717?logo=github&style=flat-square" alt="GitHub" />
+    </a>
+  </p>
+</div> 
