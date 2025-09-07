@@ -1,0 +1,608 @@
+/* 我们现在使用Tailwind CSS和DaisyUI，这里添加一些自定义样式 */
+
+/* 隐藏滚动条但允许滚动 */
+.hide-scrollbar {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari and Opera */
+}
+
+/* 渐变文本效果 */
+.gradient-text {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(to right, hsl(var(--p)), hsl(var(--s)), hsl(var(--a)));
+}
+
+/* 卡片悬停效果 */
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  transform: translateY(-4px);
+}
+
+/* 亮闪效果 */
+.shine {
+  position: relative;
+  overflow: hidden;
+}
+
+.shine::after {
+  content: "";
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  width: 70%;
+  height: 200%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  transform: rotate(25deg);
+  transition: 0.7s;
+}
+
+.shine:hover::after {
+  left: 150%;
+}
+
+/* 动态背景图案 */
+.pattern-bg {
+  background-color: transparent;
+  background-image: radial-gradient(currentColor 1px, transparent 1px);
+  background-size: 25px 25px;
+  opacity: 0.05;
+}
+
+/* 半透明覆盖层 */
+.overlay-gradient {
+  position: absolute;
+  inset: 0;
+  opacity: 0.7;
+  mix-blend-mode: multiply;
+  background: linear-gradient(to bottom right, hsl(var(--p)), hsl(var(--s)));
+}
+
+/* 自定义滚动条 */
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbarThumb) var(--scrollbarTrack);
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: var(--scrollbarTrack, hsl(var(--b2)));
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: var(--scrollbarThumb, hsl(var(--p)));
+  border-radius: 10px;
+}
+
+/* 卡片内容渐变显示 */
+.card-fade-content {
+  position: relative;
+}
+
+/* 按钮修复 - 确保在各种主题下文字可见 */
+.btn {
+  color: inherit !important; /* 确保初始文字颜色显示 */
+}
+
+/* 按钮修复 - 确保悬停时文字可见 */
+.btn:hover {
+  color: inherit !important; /* 保持原有文字颜色 */
+}
+
+/* 专门针对博客查看所有按钮的修复 */
+.btn.btn-outline.border-primary:hover {
+  color: #ffffff !important; /* 强制白色文本 */
+}
+
+/* 确保所有类型按钮的文字在悬停时可见 */
+.btn-primary:hover {
+  color: hsl(var(--pc)) !important; /* 主要按钮悬停时使用主要内容颜色 */
+}
+
+.btn-secondary:hover {
+  color: hsl(var(--sc)) !important; /* 次要按钮悬停时使用次要内容颜色 */
+}
+
+.btn-accent:hover {
+  color: hsl(var(--ac)) !important; /* 强调按钮悬停时使用强调内容颜色 */
+}
+
+.btn-outline:hover {
+  color: white !important; /* 轮廓按钮悬停时使用白色文字 */
+}
+
+/* 针对所有主题强制按钮文字显示 */
+[data-theme] .btn {
+  color: inherit !important;
+}
+
+[data-theme] .btn-primary {
+  color: hsl(var(--pc)) !important;
+}
+
+[data-theme] .btn-secondary {
+  color: hsl(var(--sc)) !important;
+}
+
+[data-theme] .btn-accent {
+  color: hsl(var(--ac)) !important;
+}
+
+[data-theme] .btn-outline {
+  color: currentColor !important;
+}
+
+[data-theme] .btn-outline:hover {
+  color: white !important;
+}
+
+/* 修复特定样式的按钮 */
+.btn.btn-primary.text-primary-content:hover {
+  color: hsl(var(--pc)) !important; /* 强制使用primary-content颜色 */
+}
+
+.btn.btn-secondary.text-secondary-content:hover {
+  color: hsl(var(--sc)) !important; /* 强制使用secondary-content颜色 */
+}
+
+.btn.btn-accent.text-accent-content:hover {
+  color: hsl(var(--ac)) !important; /* 强制使用accent-content颜色 */
+}
+
+/* hover:text-primary-content 的特别修复 */
+.hover\:text-primary-content:hover {
+  color: hsl(var(--pc)) !important;
+}
+
+/* 添加兰溪按钮风格 - 更平滑的悬停效果 */
+.btn-lanxi {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.btn-lanxi:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.btn-lanxi::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.btn-lanxi:hover::after {
+  opacity: 1;
+}
+
+/* 新增炫酷动画效果 */
+
+/* 脉冲动画 - 慢速版 */
+@keyframes pulse-slow {
+  0%, 100% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* 悬浮动画 */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-float {
+  animation: float 5s ease-in-out infinite;
+}
+
+/* 旋转渐变 */
+@keyframes spin-gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-spin-gradient {
+  background: linear-gradient(270deg, hsl(var(--p)), hsl(var(--s)), hsl(var(--a)), hsl(var(--p)));
+  background-size: 300% 300%;
+  animation: spin-gradient 8s ease infinite;
+}
+
+/* 闪烁边框 */
+@keyframes borderGlow {
+  0%, 100% {
+    box-shadow: 0 0 5px hsla(var(--p), 0.3);
+    border-color: hsla(var(--p), 0.5);
+  }
+  50% {
+    box-shadow: 0 0 20px hsla(var(--p), 0.8);
+    border-color: hsla(var(--p), 1);
+  }
+}
+
+.animate-border-glow {
+  animation: borderGlow 3s ease-in-out infinite;
+}
+/* 3D卡片悬停效果 */
+.card-3d {
+  transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+.card-3d:hover {
+  transform: rotateY(-5deg) rotateX(5deg);
+}
+
+/* 打字机效果 */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: hsl(var(--p)) }
+}
+
+.typewriter {
+  overflow: hidden;
+  border-right: 2px solid hsl(var(--p));
+  white-space: nowrap;
+  margin: 0 auto;
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* 光标悬停跟随效果 */
+.cursor-glow {
+  position: relative;
+  overflow: hidden;
+}
+
+.cursor-glow::before {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(circle, hsla(var(--p), 0.8) 0%, transparent 70%);
+  border-radius: 50%;
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.3s ease;
+}
+
+.cursor-glow:hover::before {
+  opacity: 0.15;
+}
+
+/* 闪光文字效果 */
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.text-shimmer {
+  background: linear-gradient(
+    90deg,
+    hsla(var(--p), 0.3) 0%,
+    hsla(var(--p), 0.9) 25%, 
+    hsla(var(--s), 0.9) 50%, 
+    hsla(var(--p), 0.9) 75%,
+    hsla(var(--p), 0.3) 100%
+  );
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: shimmer 6s linear infinite;
+}
+
+/* 视差卷轴效果 */
+.parallax-scroll {
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+}
+
+.parallax-layer {
+  will-change: transform;
+}
+
+/* 3D按钮效果 */
+.btn-3d {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn-3d::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  border-radius: inherit;
+  box-shadow: 0 0 0 2px hsla(var(--p), 0.5);
+  transform: translate3d(0, 0.5em, -1em);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn-3d:hover {
+  transform: translate3d(0, 0.25em, 0);
+}
+
+.btn-3d:hover::before {
+  transform: translate3d(0, 0.5em, -1em);
+}
+
+.btn-3d:active {
+  transform: translate3d(0, 0.5em, 0);
+}
+
+/* 聚光灯效果 */
+.spotlight {
+  position: relative;
+  overflow: hidden;
+}
+
+.spotlight::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(
+    circle at var(--x, 50%) var(--y, 50%), 
+    hsla(var(--p), 0.3) 0%, 
+    transparent 60%
+  );
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;
+}
+.spotlight:hover::after {
+  opacity: 1;
+}
+
+/* 标题渐变效果 - 类似Our Portfolio的紫粉渐变 */
+.title-gradient-purple {
+  background: linear-gradient(90deg, #9333ea, #ec4899);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  position: relative;
+}
+
+.title-gradient-purple::after {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background: linear-gradient(90deg, #8b5cf6, #ec4899);
+  border-radius: 3px;
+}
+
+/* 简化卡片悬停效果 */
+.card-hover-simple {
+  transition: all 0.3s ease;
+  will-change: transform;
+}
+
+.card-hover-simple:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 
+              0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* 全局按钮样式，确保文字在所有主题下都清晰可见 */
+.btn-custom-primary {
+  background-color: hsl(var(--p));
+  color: white !important;
+  border-color: hsl(var(--p));
+}
+
+.btn-custom-primary:hover {
+  background-color: hsl(var(--pf));
+  color: white !important;
+  border-color: hsl(var(--pf));
+}
+
+.btn-custom-secondary {
+  background-color: hsl(var(--s));
+  color: white !important;
+  border-color: hsl(var(--s));
+}
+
+.btn-custom-secondary:hover {
+  background-color: hsl(var(--sf));
+  color: white !important;
+  border-color: hsl(var(--sf));
+}
+
+.btn-custom-accent {
+  background-color: hsl(var(--a));
+  color: white !important;
+  border-color: hsl(var(--a));
+}
+
+.btn-custom-accent:hover {
+  background-color: hsl(var(--af));
+  color: white !important;
+  border-color: hsl(var(--af));
+}
+
+.btn-custom-outline {
+  background-color: transparent;
+  color: hsl(var(--p)) !important;
+  border-color: hsl(var(--p));
+}
+
+.btn-custom-outline:hover {
+  background-color: hsl(var(--p));
+  color: white !important;
+  border-color: hsl(var(--p));
+}
+
+/* 深色主题下按钮文字修复 */
+[data-theme="dark"] .btn,
+[data-theme="black"] .btn,
+[data-theme="synthwave"] .btn,
+[data-theme="halloween"] .btn,
+[data-theme="forest"] .btn,
+[data-theme="dracula"] .btn,
+[data-theme="business"] .btn,
+[data-theme="night"] .btn,
+[data-theme="coffee"] .btn,
+[data-theme="dim"] .btn,
+[data-theme="sunset"] .btn {
+  color: currentColor !important;
+}
+
+/* 修复深色主题下选中按钮的文字颜色 */
+[data-theme="dark"] .btn-primary,
+[data-theme="black"] .btn-primary,
+[data-theme="synthwave"] .btn-primary,
+[data-theme="halloween"] .btn-primary,
+[data-theme="forest"] .btn-primary,
+[data-theme="dracula"] .btn-primary,
+[data-theme="business"] .btn-primary,
+[data-theme="night"] .btn-primary,
+[data-theme="coffee"] .btn-primary,
+[data-theme="dim"] .btn-primary,
+[data-theme="sunset"] .btn-primary {
+  color: white !important;
+}
+
+/* 修复深色主题下hover按钮的文字颜色 */
+[data-theme="dark"] .btn:hover,
+[data-theme="black"] .btn:hover,
+[data-theme="synthwave"] .btn:hover,
+[data-theme="halloween"] .btn:hover,
+[data-theme="forest"] .btn:hover,
+[data-theme="dracula"] .btn:hover,
+[data-theme="business"] .btn:hover,
+[data-theme="night"] .btn:hover,
+[data-theme="coffee"] .btn:hover,
+[data-theme="dim"] .btn:hover,
+[data-theme="sunset"] .btn:hover {
+  color: white !important;
+}
+
+/* 修复深色主题下outline按钮的文字颜色 */
+[data-theme="dark"] .btn-outline,
+[data-theme="black"] .btn-outline,
+[data-theme="synthwave"] .btn-outline,
+[data-theme="halloween"] .btn-outline,
+[data-theme="forest"] .btn-outline,
+[data-theme="dracula"] .btn-outline,
+[data-theme="business"] .btn-outline,
+[data-theme="night"] .btn-outline,
+[data-theme="coffee"] .btn-outline,
+[data-theme="dim"] .btn-outline,
+[data-theme="sunset"] .btn-outline {
+  color: currentColor !important;
+}
+
+/* 修复深色主题下outline按钮hover的文字颜色 */
+[data-theme="dark"] .btn-outline:hover,
+[data-theme="black"] .btn-outline:hover,
+[data-theme="synthwave"] .btn-outline:hover,
+[data-theme="halloween"] .btn-outline:hover,
+[data-theme="forest"] .btn-outline:hover,
+[data-theme="dracula"] .btn-outline:hover,
+[data-theme="business"] .btn-outline:hover,
+[data-theme="night"] .btn-outline:hover,
+[data-theme="coffee"] .btn-outline:hover,
+[data-theme="dim"] .btn-outline:hover,
+[data-theme="sunset"] .btn-outline:hover {
+  color: white !important;
+}
+
+/* 针对luxury主题的特殊修复 */
+[data-theme="luxury"] .btn {
+  color: hsl(var(--nc)) !important;
+}
+
+[data-theme="luxury"] .btn:hover,
+[data-theme="luxury"] .btn:focus,
+[data-theme="luxury"] .btn:active,
+[data-theme="luxury"] .btn.active {
+  color: hsl(var(--nc)) !important;
+}
+
+[data-theme="luxury"] .btn-primary {
+  color: hsl(var(--pc)) !important;
+}
+
+[data-theme="luxury"] .btn-primary:hover,
+[data-theme="luxury"] .btn-primary:focus,
+[data-theme="luxury"] .btn-primary:active,
+[data-theme="luxury"] .btn-primary.active {
+  color: hsl(var(--nc)) !important;
+}
+
+[data-theme="luxury"] .btn-outline {
+  color: hsl(var(--p)) !important;
+}
+
+[data-theme="luxury"] .btn-outline:hover,
+[data-theme="luxury"] .btn-outline:focus,
+[data-theme="luxury"] .btn-outline.active {
+  color: hsl(var(--nc)) !important;
+  background-color: hsl(var(--p));
+}
+
+

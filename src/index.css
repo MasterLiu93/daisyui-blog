@@ -1,0 +1,298 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: all;
+}
+
+/* 滚动行为 */
+html {
+  scroll-behavior: smooth;
+}
+
+/* 通用字体 */
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* 标题排版 */
+h1, h2, h3, h4, h5, h6 {
+  @apply font-bold tracking-tight;
+  line-height: 1.2;
+  color: hsl(var(--color-base-content));
+}
+
+/* 段落排版 */
+p {
+  @apply leading-relaxed;
+  color: hsl(var(--color-base-content) / 0.9);
+}
+
+/* 链接样式 */
+a {
+  @apply transition-colors duration-300 hover:text-primary;
+}
+
+/* 自定义滚动条 */
+.custom-scrollbar {
+  scrollbar-color: rgba(var(--color-primary-rgb), 0.5) rgba(var(--color-base-100-rgb), 0.1);
+  scrollbar-width: thin;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(var(--color-base-100-rgb), 0.1);
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: rgba(var(--color-primary-rgb), 0.3);
+  border-radius: 6px;
+}
+
+/* 隐藏滚动条但保持功能 */
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* 3D卡片 */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.perspective-card {
+  transform-style: preserve-3d;
+  transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.perspective-card:hover {
+  transform: translateZ(10px) rotateX(2deg) rotateY(2deg);
+}
+
+/* 渐变文字 */
+.gradient-text {
+  @apply bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent;
+}
+
+/* 玻璃态效果 */
+.glassmorphism {
+  @apply bg-white/10 backdrop-blur-md border border-white/20;
+}
+
+/* 强调阴影 */
+.shadow-highlight {
+  box-shadow: 0 0 20px rgba(var(--color-primary-rgb), 0.3);
+}
+
+/* 强调按钮 */
+.btn-emphasis {
+  @apply btn border-2 shadow-lg transition-all duration-300;
+}
+
+.btn-emphasis:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px -5px rgba(var(--color-primary-rgb), 0.4);
+}
+
+/* 过渡持续时间工具类 */
+.duration-250 { transition-duration: 250ms; }
+.duration-400 { transition-duration: 400ms; }
+.duration-500 { transition-duration: 500ms; }
+.duration-750 { transition-duration: 750ms; }
+
+/* 页面过渡动画 */
+.page-transition-enter {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.page-transition-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 400ms, transform 400ms;
+}
+
+.page-transition-exit {
+  opacity: 1;
+}
+
+.page-transition-exit-active {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 300ms, transform 300ms;
+}
+
+/* 代码编辑器动画效果 */
+.typing-animation {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(40, end);
+}
+    
+.blinking-cursor {
+  display: inline-block;
+  margin-left: 2px;
+  width: 2px;
+  background-color: currentColor;
+  animation: blink 1s step-end infinite;
+}
+    
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+    
+@keyframes blink {
+  from, to { opacity: 0 }
+  50% { opacity: 1 }
+}
+
+/* 主题适配增强 */
+
+/* 文本阴影，增强各种主题下的文本可读性 */
+.text-with-shadow {
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.text-with-shadow-light {
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.2);
+}
+
+/* 图片加载占位符 */
+.image-placeholder {
+  @apply bg-gradient-to-br from-base-300/60 to-base-200/60 animate-pulse;
+}
+
+/* 卡片上文字内容区域渐变背景，确保文字在任何背景图片上都清晰 */
+.card-content-gradient {
+  background: linear-gradient(to top, hsl(var(--color-base-100) / 0.9), hsl(var(--color-base-100) / 0.7) 50%, hsl(var(--color-base-100) / 0.3));
+}
+
+/* 确保深色主题下文字内容清晰 */
+[data-theme="dark"] .card-content-gradient,
+[data-theme="black"] .card-content-gradient,
+[data-theme="synthwave"] .card-content-gradient,
+[data-theme="halloween"] .card-content-gradient,
+[data-theme="forest"] .card-content-gradient,
+[data-theme="aqua"] .card-content-gradient,
+[data-theme="dracula"] .card-content-gradient,
+[data-theme="business"] .card-content-gradient,
+[data-theme="night"] .card-content-gradient,
+[data-theme="coffee"] .card-content-gradient,
+[data-theme="dim"] .card-content-gradient,
+[data-theme="sunset"] .card-content-gradient {
+  background: linear-gradient(to top, hsl(var(--color-base-100) / 0.95), hsl(var(--color-base-100) / 0.8) 50%, hsl(var(--color-base-100) / 0.4));
+}
+
+/* 增强卡片边框在各种主题下的可见度 */
+.card {
+  @apply border-base-content/5;
+}
+
+/* 文本颜色适配，确保在各种主题下文本都清晰可见 */
+.text-adaptive {
+  @apply text-base-content;
+}
+
+.text-adaptive-muted {
+  @apply text-base-content/70;
+}
+
+/* 增强按钮悬停效果 */
+.btn-primary:hover {
+  @apply text-primary-content brightness-105 shadow-md;
+  filter: contrast(1.1);
+}
+
+/* 深色主题下按钮主题按钮悬停效果增强 */
+[data-theme="dark"] .btn-primary:hover,
+[data-theme="black"] .btn-primary:hover,
+[data-theme="synthwave"] .btn-primary:hover,
+[data-theme="halloween"] .btn-primary:hover,
+[data-theme="forest"] .btn-primary:hover,
+[data-theme="dracula"] .btn-primary:hover,
+[data-theme="business"] .btn-primary:hover,
+[data-theme="night"] .btn-primary:hover,
+[data-theme="coffee"] .btn-primary:hover {
+  @apply text-primary-content border-primary bg-primary brightness-125 shadow-md;
+}
+
+/* 确保outline按钮悬停时文字可见 */
+.btn-outline:hover {
+  @apply text-primary-content brightness-110;
+  filter: contrast(1.2);
+}
+
+/* 深色主题下按钮悬停效果增强 */
+[data-theme="dark"] .btn-outline:hover,
+[data-theme="black"] .btn-outline:hover,
+[data-theme="synthwave"] .btn-outline:hover,
+[data-theme="halloween"] .btn-outline:hover,
+[data-theme="forest"] .btn-outline:hover,
+[data-theme="dracula"] .btn-outline:hover,
+[data-theme="business"] .btn-outline:hover,
+[data-theme="night"] .btn-outline:hover,
+[data-theme="coffee"] .btn-outline:hover {
+  background-color: hsl(var(--p) / 0.9);
+  @apply text-primary-content border-primary shadow-md brightness-125;
+  color: white !important; /* 确保文本始终可见 */
+}
+
+/* 深色主题下按钮样式增强 */
+[data-theme="dark"] .btn-outline,
+[data-theme="black"] .btn-outline,
+[data-theme="synthwave"] .btn-outline,
+[data-theme="halloween"] .btn-outline,
+[data-theme="forest"] .btn-outline,
+[data-theme="dracula"] .btn-outline,
+[data-theme="business"] .btn-outline,
+[data-theme="night"] .btn-outline,
+[data-theme="coffee"] .btn-outline {
+  @apply border-2 shadow-sm;
+  border-color: rgba(var(--p-rgb), 0.6);
+}
+
+/* 增强各主题下badges和buttons的文字可见度 */
+.badge {
+  @apply font-medium;
+}
+
+/* 针对深色主题的badges增强可读性 */
+[data-theme="dark"] .badge,
+[data-theme="black"] .badge,
+[data-theme="synthwave"] .badge,
+[data-theme="halloween"] .badge,
+[data-theme="forest"] .badge,
+[data-theme="dracula"] .badge,
+[data-theme="business"] .badge,
+[data-theme="night"] .badge,
+[data-theme="coffee"] .badge {
+  @apply font-medium border;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* 确保深色主题下primary背景的文字内容清晰可见 */
+[data-theme="dark"] .btn-primary,
+[data-theme="black"] .btn-primary,
+[data-theme="synthwave"] .btn-primary,
+[data-theme="halloween"] .btn-primary,
+[data-theme="forest"] .btn-primary,
+[data-theme="dracula"] .btn-primary,
+[data-theme="business"] .btn-primary,
+[data-theme="night"] .btn-primary,
+[data-theme="coffee"] .btn-primary {
+  @apply text-primary-content shadow-sm;
+  border-color: rgba(var(--p-rgb), 0.3);
+}
+
+/* 确保badge在各种主题下文字可见 */
+.badge-primary {
+  @apply text-primary-content;
+}

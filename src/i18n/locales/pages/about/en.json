@@ -1,0 +1,19 @@
+{
+  "title": "About Me",
+  "subtitle": "Learn about my story and skills",
+  "intro": "I am a passionate full-stack engineer focused on creating high-quality, user-friendly digital products. With over 5 years of software development experience, I specialize in building modern web applications and mobile solutions. I love learning new technologies and applying them to solve complex problems and create exceptional user experiences. Beyond programming, I am a technical blogger, active open-source contributor, and enjoy mentoring the next generation of developers.",
+  "skills": "Skills",
+  "experience": "Work Experience",
+  "education": "Education",
+  "certificates": "Other Certificates and Certifications",
+  "downloadResume": {
+    "title": "Want to know more?",
+    "description": "Download my complete resume to learn about my detailed work history, project achievements, and technical capabilities.",
+    "button": "Download Resume"
+  },
+  "badges": {
+    "fullstack": "Full-stack Engineer",
+    "uiux": "UI/UX Designer",
+    "architect": "Tech Architect"
+  }
+} 

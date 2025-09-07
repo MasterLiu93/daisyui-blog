@@ -1,0 +1,82 @@
+{
+  "common": {
+    "readMore": "查看更多",
+    "viewDetails": "详细信息",
+    "viewDemo": "查看演示",
+    "sourceCode": "源码仓库",
+    "contactMe": "联系我",
+    "goBack": "返回",
+    "search": "搜索",
+    "clear": "清除",
+    "resetFilters": "重置筛选器",
+    "notFound": "未找到",
+    "loading": "加载中"
+  },
+  "header": {
+    "home": "首页",
+    "about": "关于我",
+    "projects": "项目",
+    "blog": "博客",
+    "contact": "联系",
+    "chooseTheme": "主题",
+    "language": "语言"
+  },
+  "footer": {
+    "copyright": "版权所有",
+    "rights": "保留所有权利",
+    "policy": "隐私政策",
+    "terms": "使用条款",
+    "subscribe": "订阅我的更新",
+    "subscribeBtn": "订阅",
+    "subscribeSuccess": "感谢订阅！",
+    "quickLinks": "快速导航",
+    "contactInfo": "联系方式",
+    "aboutText": "我是一名充满热情的全栈工程师，专注于创建高质量、用户友好的数字产品，拥有5年以上经验。",
+    "wechat": "微信",
+    "scanCode": "扫码与我联系"
+  },
+  "skills": {
+    "前端开发": "前端开发",
+    "后端开发": "后端开发",
+    "数据库": "数据库",
+    "DevOps": "DevOps",
+    "工具和方法论": "工具和方法论",
+    "proficiency": "熟练度"
+  },
+  "experience": {
+    "achievements": "主要成就",
+    "0": {
+      "title": "高级全栈工程师",
+      "period": "2023 - 至今",
+      "company": "科技创新公司",
+      "description": "负责设计和开发企业级应用，带领前端团队实施新技术栈。优化系统性能，提高用户体验。",
+      "achievements": {
+        "0": "重构了核心应用架构，减少50%的加载时间",
+        "1": "设计并实现了微服务架构，提升系统可扩展性",
+        "2": "引入现代化CI/CD流程，将部署时间从小时级降低到分钟级"
+      }
+    },
+    "1": {
+      "title": "全栈开发工程师",
+      "period": "2020 - 2023",
+      "company": "互联网科技有限公司",
+      "description": "负责多个跨平台应用的开发，实现从设计到部署的全流程。使用React和Node.js构建可扩展的应用架构。",
+      "achievements": {
+        "0": "开发了公司核心产品，月活用户超过10万",
+        "1": "设计并实现了组件库，提升团队开发效率30%",
+        "2": "优化数据库查询，降低服务器负载40%"
+      }
+    },
+    "2": {
+      "title": "前端开发工程师",
+      "period": "2018 - 2020",
+      "company": "数字解决方案公司",
+      "description": "使用现代JavaScript框架开发响应式Web应用，与UI/UX设计师和后端团队合作优化用户体验。",
+      "achievements": {
+        "0": "开发了5个大型企业客户网站",
+        "1": "实现了响应式设计，覆盖所有主流设备",
+        "2": "引入前端自动化测试，减少80%的回归bug"
+      }
+    }
+  }
+} 

@@ -1,0 +1,82 @@
+{
+  "common": {
+    "readMore": "Read More",
+    "viewDetails": "View Details",
+    "viewDemo": "View Demo",
+    "sourceCode": "Source Code",
+    "contactMe": "Contact Me",
+    "goBack": "Go Back",
+    "search": "Search",
+    "clear": "Clear",
+    "resetFilters": "Reset Filters",
+    "notFound": "Not Found",
+    "loading": "Loading"
+  },
+  "header": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "blog": "Blog",
+    "contact": "Contact",
+    "chooseTheme": "Theme",
+    "language": "Language"
+  },
+  "footer": {
+    "copyright": "Copyright",
+    "rights": "All Rights Reserved",
+    "policy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "subscribe": "Subscribe to my updates",
+    "subscribeBtn": "Subscribe",
+    "subscribeSuccess": "Thanks for subscribing!",
+    "quickLinks": "Quick Links",
+    "contactInfo": "Contact Info",
+    "aboutText": "I am a passionate full-stack engineer focused on creating high-quality, user-friendly digital products with over 5 years of experience.",
+    "wechat": "WeChat",
+    "scanCode": "Scan to connect with me"
+  },
+  "skills": {
+    "前端开发": "Frontend Development",
+    "后端开发": "Backend Development",
+    "数据库": "Databases",
+    "DevOps": "DevOps",
+    "工具和方法论": "Tools & Methodology",
+    "proficiency": "Proficiency"
+  },
+  "experience": {
+    "achievements": "Key Achievements",
+    "0": {
+      "title": "Senior Full-Stack Engineer",
+      "period": "2023 - Present",
+      "company": "Tech Innovation Co.",
+      "description": "Responsible for designing and developing enterprise applications, leading the frontend team in implementing new tech stacks. Optimize system performance and enhance user experience.",
+      "achievements": {
+        "0": "Refactored core application architecture, reducing load time by 50%",
+        "1": "Designed and implemented microservices architecture, improving system scalability",
+        "2": "Introduced modern CI/CD workflows, reducing deployment time from hours to minutes"
+      }
+    },
+    "1": {
+      "title": "Full-Stack Developer",
+      "period": "2020 - 2023",
+      "company": "Internet Technology Ltd.",
+      "description": "Responsible for developing multiple cross-platform applications, implementing the entire process from design to deployment. Built scalable application architecture using React and Node.js.",
+      "achievements": {
+        "0": "Developed company's core product with over 100K monthly active users",
+        "1": "Designed and implemented a component library, improving team development efficiency by 30%",
+        "2": "Optimized database queries, reducing server load by 40%"
+      }
+    },
+    "2": {
+      "title": "Frontend Developer",
+      "period": "2018 - 2020",
+      "company": "Digital Solutions Company",
+      "description": "Developed responsive web applications using modern JavaScript frameworks, collaborating with UI/UX designers and backend teams to optimize user experience.",
+      "achievements": {
+        "0": "Developed 5 large enterprise client websites",
+        "1": "Implemented responsive design covering all major devices",
+        "2": "Introduced frontend automated testing, reducing regression bugs by 80%"
+      }
+    }
+  }
+} 
