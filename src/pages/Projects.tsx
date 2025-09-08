@@ -28,8 +28,8 @@ const Projects = () => {
 
   // 使用useMemo缓存项目数据，只在t函数变化时重新计算
   const projects = useMemo(() => [
-    {
-      id: 1,
+  {
+    id: 1,
       title: t('projects.items.project1.title'),
       subtitle: t('projects.items.project1.subtitle'),
       description: t('projects.items.project1.description'),
@@ -40,9 +40,9 @@ const Projects = () => {
       demoUrl: 'https://demo.example.com/smarthome',
       repoUrl: 'https://github.com/example/smart-home',
       categories: ['web', 'iot']
-    },
-    {
-      id: 2,
+  },
+  {
+    id: 2,
       title: t('projects.items.project2.title'),
       subtitle: t('projects.items.project2.subtitle'),
       description: t('projects.items.project2.description'),
@@ -53,9 +53,9 @@ const Projects = () => {
       demoUrl: 'https://demo.example.com/ecommerce',
       repoUrl: 'https://github.com/example/ecommerce',
       categories: ['web']
-    },
-    {
-      id: 3,
+  },
+  {
+    id: 3,
       title: t('projects.items.project3.title'),
       subtitle: t('projects.items.project3.subtitle'),
       description: t('projects.items.project3.description'),
@@ -66,9 +66,9 @@ const Projects = () => {
       demoUrl: 'https://demo.example.com/health-app',
       repoUrl: 'https://github.com/example/health-tracker',
       categories: ['mobile']
-    },
-    {
-      id: 4,
+  },
+  {
+    id: 4,
       title: t('projects.items.project4.title'),
       subtitle: t('projects.items.project4.subtitle'),
       description: t('projects.items.project4.description'),
@@ -79,9 +79,9 @@ const Projects = () => {
       demoUrl: 'https://demo.example.com/nlp-api',
       repoUrl: 'https://github.com/example/nlp-service',
       categories: ['ai']
-    },
-    {
-      id: 5,
+  },
+  {
+    id: 5,
       title: t('projects.items.project5.title'),
       subtitle: t('projects.items.project5.subtitle'),
       description: t('projects.items.project5.description'),
@@ -92,9 +92,9 @@ const Projects = () => {
       demoUrl: 'https://demo.example.com/voting',
       repoUrl: 'https://github.com/example/blockchain-voting',
       categories: ['blockchain']
-    },
-    {
-      id: 6,
+  },
+  {
+    id: 6,
       title: t('projects.items.project6.title'),
       subtitle: t('projects.items.project6.subtitle'),
       description: t('projects.items.project6.description'),
@@ -122,7 +122,7 @@ const Projects = () => {
   useEffect(() => {
     setFilteredProjects(projects);
   }, [projects]);
-
+  
   // 添加滚动效果
   useEffect(() => {
     const handleScroll = () => {
@@ -242,49 +242,49 @@ const Projects = () => {
         >
           <div className="text-center max-w-3xl mx-auto">
             <div className="flex flex-col items-center justify-center mb-4">
-              <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 0.8, delay: 0.2 }}
-                className="relative inline-block mb-4"
-              >
-                {/* 发光背景效果 */}
-                <div className="absolute inset-0 rounded-full bg-gradient-to-r from-primary/30 to-secondary/30 blur-xl"></div>
-                
-                {/* 徽章 */}
-                <div className="relative px-6 py-2 rounded-full border border-primary/30 bg-base-100/50 backdrop-blur-sm shadow-xl">
-                  <motion.span 
-                    className="text-primary font-medium"
-                    animate={{
-                      color: ['hsl(var(--p))', 'hsl(var(--s))', 'hsl(var(--p))']
-                    }}
-                    transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
-                  >
-                    {t('projects.badge')}
-                  </motion.span>
-                </div>
-                
-                {/* 旋转装饰边框 */}
-                <div className="absolute -inset-1 rounded-full border border-dashed border-primary/30 opacity-70 animate-[spin_20s_linear_infinite]"></div>
-                <div className="absolute -inset-2 rounded-full border border-dashed border-secondary/20 opacity-50 animate-[spin_25s_linear_reverse_infinite]"></div>
-                <motion.div 
-                  className="absolute -inset-3 rounded-full border border-dotted border-accent/20 opacity-40"
-                  animate={{ rotate: [0, 360] }}
-                  transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
-                />
-              </motion.div>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="relative inline-block mb-4"
+            >
+              {/* 发光背景效果 */}
+              <div className="absolute inset-0 rounded-full bg-gradient-to-r from-primary/30 to-secondary/30 blur-xl"></div>
               
-              <motion.h1
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.4 }}
+              {/* 徽章 */}
+              <div className="relative px-6 py-2 rounded-full border border-primary/30 bg-base-100/50 backdrop-blur-sm shadow-xl">
+                <motion.span 
+                  className="text-primary font-medium"
+                  animate={{
+                    color: ['hsl(var(--p))', 'hsl(var(--s))', 'hsl(var(--p))']
+                  }}
+                  transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
+                >
+                  {t('projects.badge')}
+                </motion.span>
+              </div>
+              
+              {/* 旋转装饰边框 */}
+              <div className="absolute -inset-1 rounded-full border border-dashed border-primary/30 opacity-70 animate-[spin_20s_linear_infinite]"></div>
+              <div className="absolute -inset-2 rounded-full border border-dashed border-secondary/20 opacity-50 animate-[spin_25s_linear_reverse_infinite]"></div>
+              <motion.div 
+                className="absolute -inset-3 rounded-full border border-dotted border-accent/20 opacity-40"
+                animate={{ rotate: [0, 360] }}
+                transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
+              />
+            </motion.div>
+            
+            <motion.h1
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
                 className="text-4xl md:text-6xl font-bold mb-6 relative inline-block"
               >
                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-secondary to-primary">
-                  {t('projects.title')}
+              {t('projects.title')}
                 </span>
                 <div className="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-secondary to-primary"></div>
-              </motion.h1>
+            </motion.h1>
             </div>
             
             <motion.p
@@ -533,7 +533,7 @@ const Projects = () => {
               transition={{ duration: 0.8 }}
             >
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-secondary to-primary">
-                {t('projects.cooperation.title')}
+              {t('projects.cooperation.title')}
               </span>
               <div className="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-to-r from-secondary to-primary"></div>
             </motion.h2>

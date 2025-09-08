@@ -234,47 +234,47 @@ const faqs = [
               className="text-center mb-6"
             >
               <div className="flex flex-col items-center justify-center mb-4">
-                <div className="inline-block relative mb-4">
-                  <motion.div
-                    className="absolute -inset-1 rounded-full bg-gradient-to-r from-primary/30 to-secondary/30 blur-md"
-                    animate={{ 
-                      background: [
-                        "linear-gradient(45deg, rgba(var(--p), 0.3) 0%, rgba(var(--s), 0.3) 100%)",
-                        "linear-gradient(135deg, rgba(var(--p), 0.3) 0%, rgba(var(--s), 0.3) 100%)",
-                        "linear-gradient(225deg, rgba(var(--p), 0.3) 0%, rgba(var(--s), 0.3) 100%)",
-                        "linear-gradient(315deg, rgba(var(--p), 0.3) 0%, rgba(var(--s), 0.3) 100%)"
-                      ]
+              <div className="inline-block relative mb-4">
+                <motion.div
+                  className="absolute -inset-1 rounded-full bg-gradient-to-r from-primary/30 to-secondary/30 blur-md"
+                  animate={{ 
+                    background: [
+                      "linear-gradient(45deg, rgba(var(--p), 0.3) 0%, rgba(var(--s), 0.3) 100%)",
+                      "linear-gradient(135deg, rgba(var(--p), 0.3) 0%, rgba(var(--s), 0.3) 100%)",
+                      "linear-gradient(225deg, rgba(var(--p), 0.3) 0%, rgba(var(--s), 0.3) 100%)",
+                      "linear-gradient(315deg, rgba(var(--p), 0.3) 0%, rgba(var(--s), 0.3) 100%)"
+                    ]
+                  }}
+                  transition={{ duration: 8, repeat: Infinity, ease: "linear" }}
+                />
+                <div className="relative px-5 py-2 rounded-full border border-primary/30 bg-base-100/50 backdrop-blur-sm shadow-lg z-10">
+                  <motion.span 
+                    className="font-medium text-sm"
+                    animate={{
+                      color: ['hsl(var(--p))', 'hsl(var(--s))', 'hsl(var(--p))']
                     }}
-                    transition={{ duration: 8, repeat: Infinity, ease: "linear" }}
-                  />
-                  <div className="relative px-5 py-2 rounded-full border border-primary/30 bg-base-100/50 backdrop-blur-sm shadow-lg z-10">
-                    <motion.span 
-                      className="font-medium text-sm"
-                      animate={{
-                        color: ['hsl(var(--p))', 'hsl(var(--s))', 'hsl(var(--p))']
-                      }}
-                      transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
-                    >
-                      {t('contact.badge')}
-                    </motion.span>
-                  </div>
-                  
-                  {/* 旋转装饰边框 */}
-                  <div className="absolute -inset-1 rounded-full border border-dashed border-primary/30 opacity-70 animate-[spin_15s_linear_infinite]"></div>
-                  <div className="absolute -inset-2 rounded-full border border-dashed border-secondary/20 opacity-50 animate-[spin_20s_linear_reverse_infinite]"></div>
+                    transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
+                  >
+                    {t('contact.badge')}
+                  </motion.span>
                 </div>
                 
-                <motion.h1 
+                {/* 旋转装饰边框 */}
+                <div className="absolute -inset-1 rounded-full border border-dashed border-primary/30 opacity-70 animate-[spin_15s_linear_infinite]"></div>
+                <div className="absolute -inset-2 rounded-full border border-dashed border-secondary/20 opacity-50 animate-[spin_20s_linear_reverse_infinite]"></div>
+              </div>
+              
+              <motion.h1 
                   className="text-5xl md:text-7xl font-bold mb-6 relative inline-block"
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.8, delay: 0.2 }}
-                >
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+              >
                   <span className="bg-clip-text text-transparent bg-gradient-to-r from-secondary to-primary">
-                    {t('contact.title')}
+                {t('contact.title')}
                   </span>
                   <div className="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-secondary to-primary"></div>
-                </motion.h1>
+              </motion.h1>
               </div>
               
               <motion.p 
@@ -413,7 +413,7 @@ const faqs = [
               <div className="card-body relative z-10">
                 <h2 className="text-3xl font-bold mb-6 relative inline-block">
                   <span className="bg-clip-text text-transparent bg-gradient-to-r from-secondary to-primary">
-                    {t('contact.form.title')}
+                  {t('contact.form.title')}
                   </span>
                   <div className="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-to-r from-secondary to-primary"></div>
                 </h2>
@@ -526,7 +526,7 @@ const faqs = [
                 <div className="card-body">
                   <h2 className="text-3xl font-bold mb-6 relative inline-block">
                     <span className="bg-clip-text text-transparent bg-gradient-to-r from-secondary to-primary">
-                      {t('contact.location.title')}
+                    {t('contact.location.title')}
                     </span>
                     <div className="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-to-r from-secondary to-primary"></div>
                   </h2>
@@ -567,7 +567,7 @@ const faqs = [
                 <div className="card-body">
                   <h3 className="text-xl font-bold mb-2 relative inline-block">
                     <span className="bg-clip-text text-transparent bg-gradient-to-r from-secondary to-primary">
-                      {t('contact.remote.title')}
+                    {t('contact.remote.title')}
                     </span>
                     <div className="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-to-r from-secondary to-primary"></div>
                   </h3>

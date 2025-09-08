@@ -256,7 +256,7 @@ const Home = () => {
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 relative inline-block">
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-secondary to-primary">
-                {t('home.projects.subtitle', '我们的作品集')}
+              {t('home.projects.subtitle', '我们的作品集')}
               </span>
               <div className="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-secondary to-primary"></div>
             </h2>
@@ -271,7 +271,7 @@ const Home = () => {
               <div 
                 key={project.id} 
                 className="card bg-base-100 shadow-lg border border-base-content/10 overflow-hidden hover:shadow-xl transition-all duration-500 group"
-                style={{
+                style={{ 
                   background: "linear-gradient(145deg, rgba(255,255,255,0.05) 0%, rgba(0,0,0,0.05) 100%)",
                   backdropFilter: "blur(10px)",
                 }}
@@ -283,10 +283,10 @@ const Home = () => {
                       alt={project.title} 
                       className="w-full h-full object-cover"
                     />
-                    
-                    {/* 渐变叠加层 */}
+                  
+                  {/* 渐变叠加层 */}
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-70"></div>
-                    
+                  
                     {/* 悬停光效 */}
                     <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-gradient-to-r from-secondary/20 to-primary/20 mix-blend-overlay"></div>
                   </div>
@@ -315,17 +315,17 @@ const Home = () => {
                   </div>
                   
                   <div className="card-actions justify-end mt-4">
-                    <Link 
-                      to={project.link} 
+                      <Link 
+                        to={project.link} 
                       className="btn btn-secondary btn-sm hover:shadow-lg hover:shadow-secondary/30 transition-shadow duration-300 relative overflow-hidden group"
-                    >
-                      {/* 按钮内部光效 */}
+                      >
+                        {/* 按钮内部光效 */}
                       <span className="absolute inset-0 w-full h-full bg-white/20 transform -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-in-out"></span>
-                      <span className="relative z-10">{t('common.viewDetails')}</span>
+                        <span className="relative z-10">{t('common.viewDetails')}</span>
                       <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1 relative z-10 group-hover:translate-x-1 transition-transform duration-300" viewBox="0 0 20 20" fill="currentColor">
-                        <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                          <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
                       </svg>
-                    </Link>
+                      </Link>
                   </div>
                 </div>
               </div>
@@ -363,7 +363,7 @@ const Home = () => {
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 relative inline-block">
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-secondary to-primary">
-                {t('home.techStack.title', '技术栈')}
+              {t('home.techStack.title', '技术栈')}
               </span>
               <div className="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-secondary to-primary"></div>
             </h2>
@@ -422,7 +422,7 @@ const Home = () => {
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 relative inline-block">
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-secondary to-primary">
-                {t('home.stats.title', '成就与数据')}
+              {t('home.stats.title', '成就与数据')}
               </span>
               <div className="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-secondary to-primary"></div>
             </h2>
@@ -467,7 +467,7 @@ const Home = () => {
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 relative inline-block">
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-secondary to-primary">
-                {t('home.skills.title', '专业技能')}
+              {t('home.skills.title', '专业技能')}
               </span>
               <div className="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-secondary to-primary"></div>
             </h2>
@@ -530,9 +530,9 @@ const Home = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {blogPosts.map((post) => (
               <div
-                key={post.id}
+                    key={post.id}
                 className="card bg-base-100 shadow-lg border border-base-content/10 overflow-hidden hover:shadow-xl transition-all duration-500 group"
-                style={{
+                style={{ 
                   background: "linear-gradient(145deg, rgba(255,255,255,0.05) 0%, rgba(0,0,0,0.05) 100%)",
                   backdropFilter: "blur(10px)",
                 }}
@@ -544,10 +544,10 @@ const Home = () => {
                       alt={post.title} 
                       className="w-full h-full object-cover"
                     />
-                    
-                    {/* 渐变叠加层 */}
+                  
+                  {/* 渐变叠加层 */}
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-70"></div>
-                    
+                  
                     {/* 悬停光效 */}
                     <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-gradient-to-r from-secondary/20 to-primary/20 mix-blend-overlay"></div>
                   </div>
@@ -581,17 +581,17 @@ const Home = () => {
                   </div>
                   
                   <div className="card-actions justify-end mt-4">
-                    <Link 
-                      to={post.link} 
+                      <Link 
+                        to={post.link} 
                       className="btn btn-secondary btn-sm hover:shadow-lg hover:shadow-secondary/30 transition-shadow duration-300 relative overflow-hidden group"
-                    >
-                      {/* 按钮内部光效 */}
+                      >
+                        {/* 按钮内部光效 */}
                       <span className="absolute inset-0 w-full h-full bg-white/20 transform -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-in-out"></span>
-                      <span className="relative z-10">{t('common.readMore')}</span>
+                        <span className="relative z-10">{t('common.readMore')}</span>
                       <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1 relative z-10 group-hover:translate-x-1 transition-transform duration-300" viewBox="0 0 20 20" fill="currentColor">
-                        <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                          <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
                       </svg>
-                    </Link>
+                      </Link>
                   </div>
                 </div>
               </div>
@@ -631,7 +631,7 @@ const Home = () => {
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 relative inline-block">
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-secondary to-primary">
-                {t('home.testimonials.title', '客户评价')}
+              {t('home.testimonials.title', '客户评价')}
               </span>
               <div className="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-secondary to-primary"></div>
             </h2>
@@ -661,7 +661,7 @@ const Home = () => {
               <span className="badge badge-accent px-5 py-3 text-accent-content animate-pulse mb-4">{t('home.contact.badge')}</span>
               <h2 className="text-4xl md:text-6xl font-bold mb-8 relative inline-block">
                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-secondary to-primary">
-                  {t('home.contact.title')}
+                {t('home.contact.title')}
                 </span>
                 <div className="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-secondary to-primary"></div>
               </h2>

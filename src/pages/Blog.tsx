@@ -74,7 +74,7 @@ const BlogPostCard: React.FC<{
           
           {/* 渐变叠加层 */}
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-70"></div>
-          
+        
           {/* 悬停光效 */}
           <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-gradient-to-r from-secondary/20 to-primary/20 mix-blend-overlay"></div>
         </div>
@@ -134,7 +134,7 @@ const BlogPostCard: React.FC<{
             <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1 relative z-10 group-hover:translate-x-1 transition-transform duration-300" viewBox="0 0 20 20" fill="currentColor">
               <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
             </svg>
-          </Link>
+            </Link>
         </div>
       </div>
     </motion.div>
@@ -401,47 +401,47 @@ const categories = [
             />
             
             <div className="flex flex-col items-center justify-center">
-              <div className="inline-block relative mb-4">
-                <motion.div
-                  className="absolute -inset-1 rounded-full bg-gradient-to-r from-primary/30 to-secondary/30 blur-md"
-                  animate={{ 
-                    background: [
-                      "linear-gradient(45deg, rgba(var(--p), 0.3) 0%, rgba(var(--s), 0.3) 100%)",
-                      "linear-gradient(135deg, rgba(var(--p), 0.3) 0%, rgba(var(--s), 0.3) 100%)",
-                      "linear-gradient(225deg, rgba(var(--p), 0.3) 0%, rgba(var(--s), 0.3) 100%)",
-                      "linear-gradient(315deg, rgba(var(--p), 0.3) 0%, rgba(var(--s), 0.3) 100%)"
-                    ]
+            <div className="inline-block relative mb-4">
+              <motion.div
+                className="absolute -inset-1 rounded-full bg-gradient-to-r from-primary/30 to-secondary/30 blur-md"
+                animate={{ 
+                  background: [
+                    "linear-gradient(45deg, rgba(var(--p), 0.3) 0%, rgba(var(--s), 0.3) 100%)",
+                    "linear-gradient(135deg, rgba(var(--p), 0.3) 0%, rgba(var(--s), 0.3) 100%)",
+                    "linear-gradient(225deg, rgba(var(--p), 0.3) 0%, rgba(var(--s), 0.3) 100%)",
+                    "linear-gradient(315deg, rgba(var(--p), 0.3) 0%, rgba(var(--s), 0.3) 100%)"
+                  ]
+                }}
+                transition={{ duration: 8, repeat: Infinity, ease: "linear" }}
+              />
+              <div className="relative px-5 py-2 rounded-full border border-primary/30 bg-base-100/50 backdrop-blur-sm shadow-lg z-10">
+                <motion.span 
+                  className="font-medium text-sm"
+                  animate={{
+                    color: ['hsl(var(--p))', 'hsl(var(--s))', 'hsl(var(--p))']
                   }}
-                  transition={{ duration: 8, repeat: Infinity, ease: "linear" }}
-                />
-                <div className="relative px-5 py-2 rounded-full border border-primary/30 bg-base-100/50 backdrop-blur-sm shadow-lg z-10">
-                  <motion.span 
-                    className="font-medium text-sm"
-                    animate={{
-                      color: ['hsl(var(--p))', 'hsl(var(--s))', 'hsl(var(--p))']
-                    }}
-                    transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
-                  >
-                    {t('blog.badge')}
-                  </motion.span>
-                </div>
-                
-                {/* 旋转装饰边框 */}
-                <div className="absolute -inset-1 rounded-full border border-dashed border-primary/30 opacity-70 animate-[spin_15s_linear_infinite]"></div>
-                <div className="absolute -inset-2 rounded-full border border-dashed border-secondary/20 opacity-50 animate-[spin_20s_linear_reverse_infinite]"></div>
+                  transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
+                >
+                  {t('blog.badge')}
+                </motion.span>
               </div>
               
-              <motion.h1
+              {/* 旋转装饰边框 */}
+              <div className="absolute -inset-1 rounded-full border border-dashed border-primary/30 opacity-70 animate-[spin_15s_linear_infinite]"></div>
+              <div className="absolute -inset-2 rounded-full border border-dashed border-secondary/20 opacity-50 animate-[spin_20s_linear_reverse_infinite]"></div>
+            </div>
+            
+            <motion.h1
                 className="text-4xl md:text-6xl font-bold mb-6 relative inline-block"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.2 }}
-              >
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+            >
                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-secondary to-primary">
-                  {t('blog.title')}
+              {t('blog.title')}
                 </span>
                 <div className="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-secondary to-primary"></div>
-              </motion.h1>
+            </motion.h1>
             </div>
             
             <motion.p
@@ -589,7 +589,7 @@ const categories = [
               <div className="card-body">
                 <h3 className="text-xl font-bold mb-4 relative inline-block">
                   <span className="bg-clip-text text-transparent bg-gradient-to-r from-secondary to-primary">
-                    {t('blog.about.title')}
+                  {t('blog.about.title')}
                   </span>
                   <div className="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-to-r from-secondary to-primary"></div>
                 </h3>
@@ -758,7 +758,7 @@ const categories = [
                   className="text-xl font-bold mb-2 relative inline-block"
                 >
                   <span className="bg-clip-text text-transparent bg-gradient-to-r from-secondary to-primary">
-                    {t('blog.subscribeTitle')}
+                  {t('blog.subscribeTitle')}
                   </span>
                   <div className="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-to-r from-secondary to-primary"></div>
                 </motion.h3>
