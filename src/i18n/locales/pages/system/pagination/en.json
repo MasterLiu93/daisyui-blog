@@ -1,0 +1,12 @@
+{
+  "showing": "Showing {start} to {end} of {total} entries",
+  "firstPage": "First",
+  "prevPage": "Previous",
+  "nextPage": "Next",
+  "lastPage": "Last",
+  "page": "Page",
+  "of": "of",
+  "perPage": "per page",
+  "jump": "Jump to",
+  "total": "Total {total} items"
+} 

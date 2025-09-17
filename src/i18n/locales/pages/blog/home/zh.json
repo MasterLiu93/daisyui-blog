@@ -1,0 +1,111 @@
+{
+  "hero": {
+    "badge": "创新数字体验",
+    "title": "打造未来",
+    "subtitle": "数字创意平台",
+    "description": "结合先进技术与创意设计，打造卓越的数字体验。我们专注于创建引人入胜的交互式网站、应用程序和数字产品。",
+    "cta": "查看项目",
+    "contactCta": "联系我们",
+    "buttonText": "了解更多"
+  },
+  "projects": {
+    "title": "特色项目",
+    "subtitle": "我们的作品集",
+    "description": "浏览我们的精选项目，展示我们在各个领域的专业技能和创意",
+    "viewAll": "查看所有项目",
+    "viewAllButton": "查看所有项目",
+    "badge": "特色作品",
+    "items": {
+      "project1": {
+        "title": "智能家居控制系统",
+        "description": "基于React和Node.js的智能家居控制平台"
+      },
+      "project2": {
+        "title": "电子商务平台",
+        "description": "基于Next.js和Stripe的现代电子商务平台"
+      },
+      "project3": {
+        "title": "健康追踪应用",
+        "description": "React Native构建的健康追踪应用"
+      }
+    }
+  },
+  "blog": {
+    "title": "最新资讯",
+    "subtitle": "博客文章",
+    "description": "了解行业动态、技术趋势和我们的专业见解",
+    "viewAll": "浏览所有文章",
+    "viewAllButton": "查看所有文章",
+    "readMore": "阅读更多",
+    "badge": "博客文章",
+    "posts": {
+      "post1": {
+        "title": "React中的状态管理最佳实践",
+        "excerpt": "探索不同的状态管理解决方案，从Context API到Redux和Zustand"
+      },
+      "post2": {
+        "title": "TypeScript高级类型和模式",
+        "excerpt": "深入TypeScript的类型系统，掌握高级类型和设计模式"
+      },
+      "post3": {
+        "title": "CSS布局技术的演变",
+        "excerpt": "从表格到Flexbox和Grid，CSS布局技术的发展历程"
+      }
+    }
+  },
+  "contact": {
+    "title": "准备好开始您的项目了吗？",
+    "subtitle": "联系我们，共同探讨如何将您的创意转化为现实",
+    "badge": "与我们合作",
+    "cta": "立即联系",
+    "description": "让我们一起讨论您的项目需求，将您的创意变为现实",
+    "buttonText": "联系我们",
+    "learnMore": "了解更多"
+  },
+  "skills": {
+    "title": "专业技能",
+    "description": "我精通多种前端和后端技术，能够构建高质量的全栈应用",
+    "badge": "专业技能"
+  },
+  "techStack": {
+    "title": "技术栈",
+    "description": "我使用现代化的技术栈构建强大且可扩展的应用",
+    "badge": "技术领域"
+  },
+  "stats": {
+    "title": "成就与数据",
+    "description": "多年专业开发积累的丰富经验与项目成果",
+    "badge": "数据展示"
+  },
+  "testimonials": {
+    "title": "客户评价",
+    "description": "来自合作伙伴的真实评价与反馈",
+    "badge": "客户心声",
+    "roles": {
+      "ceo": "创始人兼CEO",
+      "productManager": "产品总监",
+      "cto": "技术总监"
+    },
+    "people": {
+      "zhang": "张先生",
+      "wang": "王女士",
+      "li": "李先生"
+    },
+    "companies": {
+      "tech": "科技创新有限公司",
+      "digital": "数字营销集团",
+      "smart": "智能科技有限公司"
+    },
+    "items": {
+      "testimonial1": "非常满意Laby的工作，他不仅技术精湛，而且能够深入理解我们的业务需求，提供全面的解决方案。他的代码质量和项目管理能力给我们留下了深刻的印象。",
+      "testimonial2": "与Laby的合作非常愉快。他能够快速适应我们频繁变化的需求，并且总是能够按时交付高质量的成果。特别是他在前端开发方面的专业知识，帮助我们大大提升了用户体验。",
+      "testimonial3": "Laby是一位出色的全栈开发者，他不仅精通前端和后端技术，还具有很强的系统架构能力。在我们的项目中，他提出了许多创新的解决方案，帮助我们克服了技术难题。"
+    }
+  },
+  "counter": {
+    "yearsExperience": "年开发经验",
+    "projectsCompleted": "已完成项目",
+    "satisfactionRate": "客户满意度",
+    "clientsServed": "服务客户"
+  }
+} 

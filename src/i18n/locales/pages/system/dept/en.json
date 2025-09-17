@@ -1,0 +1,62 @@
+{
+  "title": "Department Management",
+  "columns": {
+    "id": "ID",
+    "name": "Department Name",
+    "code": "Department Code",
+    "parentDept": "Parent Department",
+    "order": "Order",
+    "status": "Status",
+    "createdTime": "Created Time",
+    "actions": "Actions",
+    "phone": "Phone",
+    "email": "Email",
+    "leader": "Leader"
+  },
+  "actions": {
+    "add": "Add Department",
+    "addDept": "Add Department",
+    "edit": "Edit",
+    "delete": "Delete",
+    "batchDelete": "Batch Delete",
+    "search": "Search",
+    "reset": "Reset"
+  },
+  "form": {
+    "name": "Department Name",
+    "code": "Department Code",
+    "parentDept": "Parent Department",
+    "order": "Order",
+    "status": "Status",
+    "description": "Description",
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "phone": "Phone",
+    "email": "Email",
+    "leader": "Leader"
+  },
+  "messages": {
+    "confirmDelete": "Are you sure you want to delete this department?",
+    "confirmBatchDelete": "Are you sure you want to delete the selected {count} departments?",
+    "deleteSuccess": "Department deleted successfully",
+    "addSuccess": "Department added successfully",
+    "editSuccess": "Department updated successfully",
+    "error": "An error occurred",
+    "deleteError": "Delete failed, there may be subdepartments under this department"
+  },
+  "validation": {
+    "nameRequired": "Department name is required",
+    "codeRequired": "Department code is required",
+    "orderRequired": "Order is required"
+  },
+  "status": {
+    "active": "Active",
+    "inactive": "Inactive"
+  },
+  "allStatus": "All Status",
+  "noDeptFound": "No departments found",
+  "resetFilter": "Reset filters",
+  "placeholder": {
+    "name": "Please enter department name"
+  }
+} 

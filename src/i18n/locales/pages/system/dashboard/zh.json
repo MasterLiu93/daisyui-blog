@@ -1,0 +1,35 @@
+{
+  "title": "仪表盘",
+  "totalUsers": "总用户数",
+  "activeUsers": "活跃用户",
+  "newUsers": "新增用户",
+  "systemAnnouncements": "系统公告",
+  "recentActivities": "最近活动",
+  "quickActions": "快捷操作",
+  "viewMore": "查看更多",
+  "vsLastWeek": "较上周",
+  "statistics": {
+    "users": "用户",
+    "resourceUsage": "资源使用",
+    "systemPerformance": "系统性能",
+    "last24Hours": "最近24小时",
+    "cpu": "CPU",
+    "memory": "内存",
+    "disk": "磁盘",
+    "network": "网络",
+    "responseTime": "响应时间",
+    "throughput": "吞吐量",
+    "errorRate": "错误率"
+  },
+  "actions": {
+    "addUser": "添加用户",
+    "addRole": "添加角色",
+    "addDepartment": "添加部门",
+    "viewProfile": "查看个人信息"
+  },
+  "announcements": {
+    "maintenance": "系统维护",
+    "update": "系统更新",
+    "welcome": "欢迎使用"
+  }
+} 

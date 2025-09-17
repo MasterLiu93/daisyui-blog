@@ -1,0 +1,111 @@
+{
+  "hero": {
+    "badge": "Innovative Digital Experience",
+    "title": "Building the Future",
+    "subtitle": "Digital Creative Platform",
+    "description": "Combining advanced technology with creative design to craft exceptional digital experiences. We focus on creating engaging interactive websites, applications, and digital products.",
+    "cta": "View Projects",
+    "contactCta": "Contact Us",
+    "buttonText": "Learn More"
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "subtitle": "Our Portfolio",
+    "description": "Browse our selected projects showcasing our expertise and creativity across various domains",
+    "viewAll": "View All Projects",
+    "viewAllButton": "View All Projects",
+    "badge": "Featured Work",
+    "items": {
+      "project1": {
+        "title": "Smart Home Control System",
+        "description": "Smart home control platform based on React and Node.js"
+      },
+      "project2": {
+        "title": "E-commerce Platform",
+        "description": "Modern e-commerce platform built with Next.js and Stripe"
+      },
+      "project3": {
+        "title": "Health Tracking App",
+        "description": "Health tracking application built with React Native"
+      }
+    }
+  },
+  "blog": {
+    "title": "Latest News",
+    "subtitle": "Blog Posts",
+    "description": "Stay updated with industry trends, technology insights, and our professional perspectives",
+    "viewAll": "Browse All Articles",
+    "viewAllButton": "View All Articles",
+    "readMore": "Read More",
+    "badge": "Blog Posts",
+    "posts": {
+      "post1": {
+        "title": "Best Practices for State Management in React",
+        "excerpt": "Explore different state management solutions, from Context API to Redux and Zustand"
+      },
+      "post2": {
+        "title": "Advanced TypeScript Types and Patterns",
+        "excerpt": "Dive into TypeScript's type system, master advanced types and design patterns"
+      },
+      "post3": {
+        "title": "Evolution of CSS Layout Techniques",
+        "excerpt": "From tables to Flexbox and Grid, the evolution of CSS layout technologies"
+      }
+    }
+  },
+  "contact": {
+    "title": "Ready to start your project?",
+    "subtitle": "Contact us to discuss how to bring your ideas to life",
+    "badge": "Work With Us",
+    "cta": "Contact Now",
+    "learnMore": "Learn More",
+    "description": "Let's discuss your project requirements and turn your ideas into reality",
+    "buttonText": "Contact Us"
+  },
+  "skills": {
+    "title": "Professional Skills",
+    "description": "I master various frontend and backend technologies to build high-quality full-stack applications",
+    "badge": "Professional Skills"
+  },
+  "techStack": {
+    "title": "Tech Stack",
+    "description": "I use modern technology stacks to build powerful and scalable applications",
+    "badge": "Tech Domain"
+  },
+  "stats": {
+    "title": "Achievements & Data",
+    "description": "Rich experience and project outcomes from years of professional development",
+    "badge": "Data Showcase"
+  },
+  "testimonials": {
+    "title": "Client Testimonials",
+    "description": "Authentic reviews and feedback from our partners",
+    "badge": "Client Voices",
+    "roles": {
+      "ceo": "Founder & CEO",
+      "productManager": "Product Director",
+      "cto": "CTO"
+    },
+    "people": {
+      "zhang": "Mr. Zhang",
+      "wang": "Ms. Wang",
+      "li": "Mr. Li"
+    },
+    "companies": {
+      "tech": "Tech Innovation Co.",
+      "digital": "Digital Marketing Group",
+      "smart": "Smart Technology Ltd."
+    },
+    "items": {
+      "testimonial1": "I'm very satisfied with Laby's work. He is not only technically skilled but also able to deeply understand our business needs and provide comprehensive solutions. His code quality and project management skills left a deep impression on us.",
+      "testimonial2": "It was a pleasure working with Laby. He was able to quickly adapt to our frequently changing requirements and always delivered high-quality results on time. His expertise in frontend development greatly enhanced our user experience.",
+      "testimonial3": "Laby is an outstanding full-stack developer who is proficient in both frontend and backend technologies and has strong system architecture capabilities. He proposed many innovative solutions in our project, helping us overcome technical challenges."
+    }
+  },
+  "counter": {
+    "yearsExperience": "Years Experience",
+    "projectsCompleted": "Projects Completed",
+    "satisfactionRate": "Satisfaction Rate",
+    "clientsServed": "Clients Served"
+  }
+} 

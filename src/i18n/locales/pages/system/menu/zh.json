@@ -1,0 +1,70 @@
+{
+  "title": "菜单管理",
+  "columns": {
+    "menuName": "菜单名称",
+    "icon": "图标",
+    "sort": "排序",
+    "perms": "权限标识",
+    "path": "路由地址",
+    "component": "组件路径",
+    "menuType": "菜单类型",
+    "visible": "可见",
+    "status": "状态",
+    "actions": "操作",
+    "remark": "备注"
+  },
+  "actions": {
+    "addMenu": "新增菜单",
+    "edit": "编辑",
+    "delete": "删除",
+    "search": "搜索",
+    "reset": "重置",
+    "title": "操作"
+  },
+  "form": {
+    "menuName": "菜单名称",
+    "parentMenu": "上级菜单",
+    "menuType": "菜单类型",
+    "icon": "图标",
+    "sort": "排序",
+    "path": "路由地址",
+    "component": "组件路径",
+    "permissions": "权限标识",
+    "visible": "可见",
+    "status": "状态",
+    "submit": "提交",
+    "cancel": "取消"
+  },
+  "types": {
+    "directory": "目录",
+    "menu": "菜单",
+    "button": "按钮"
+  },
+  "messages": {
+    "confirmDelete": "确定要删除此菜单吗？",
+    "deleteSuccess": "菜单删除成功",
+    "addSuccess": "菜单添加成功",
+    "editSuccess": "菜单更新成功",
+    "error": "发生错误",
+    "deleteError": "无法删除含有子菜单的菜单"
+  },
+  "validation": {
+    "menuNameRequired": "菜单名称为必填项",
+    "pathRequired": "路由地址为必填项",
+    "componentRequired": "组件路径为必填项"
+  },
+  "directory": "目录",
+  "menu": "菜单",
+  "button": "按钮",
+  "enabled": "启用",
+  "disabled": "禁用",
+  "yes": "是",
+  "no": "否",
+  "allStatus": "所有状态",
+  "deleteConfirm": "确定要删除此菜单吗？",
+  "deleteError": "删除菜单失败",
+  "noMenusFound": "未找到菜单",
+  "placeholder": {
+    "menuName": "请输入菜单名称"
+  }
+} 

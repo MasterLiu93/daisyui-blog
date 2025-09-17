@@ -1,0 +1,23 @@
+{
+  "title": "登录",
+  "welcome": "欢迎使用系统",
+  "username": "用户名",
+  "password": "密码",
+  "rememberMe": "记住我",
+  "forgotPassword": "忘记密码？",
+  "login": "登录",
+  "register": "立即注册",
+  "noAccount": "没有账号？",
+  "captcha": "验证码",
+  "clickToRefresh": "点击刷新",
+  "errors": {
+    "usernameRequired": "请输入用户名",
+    "passwordRequired": "请输入密码",
+    "captchaRequired": "请输入验证码",
+    "invalidCredentials": "用户名或密码错误",
+    "accountLocked": "您的账号已被锁定",
+    "invalidCaptcha": "验证码错误"
+  },
+  "loginSuccess": "登录成功",
+  "loggingIn": "登录中..."
+} 

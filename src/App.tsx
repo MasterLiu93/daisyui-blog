@@ -1,12 +1,25 @@
 import { Routes, Route, useLocation } from 'react-router-dom'
 import { useEffect } from 'react'
 import './App.css'
-import Layout from './components/Layout'
-import Home from './pages/Home'
-import Projects from './pages/Projects'
-import Blog from './pages/Blog'
-import About from './pages/About'
-import Contact from './pages/Contact'
+// Blog imports
+import BlogLayout from './components/blog/Layout'
+import Home from './pages/blog/Home'
+import Projects from './pages/blog/Projects'
+import Blog from './pages/blog/Blog'
+import About from './pages/blog/About'
+import Contact from './pages/blog/Contact'
+
+// System imports
+import SystemLayout from './components/system/Layout'
+import Dashboard from './pages/system/Dashboard'
+import Users from './pages/system/Users'
+import Roles from './pages/system/Roles'
+import Departments from './pages/system/Departments'
+import Menus from './pages/system/Menus'
+import Dictionaries from './pages/system/Dictionaries'
+import Login from './pages/system/Login'
+import Register from './pages/system/Register'
+import AuthGuard from './components/system/AuthGuard'
 
 // ScrollToTop组件：在路由变化时滚动到页面顶部
 function ScrollToTop() {
@@ -30,11 +43,22 @@ function App() {
     <>
       <ScrollToTop />
       <Routes>
-        <Route path="/" element={<Layout><Home /></Layout>} />
-        <Route path="/projects" element={<Layout><Projects /></Layout>} />
-        <Route path="/blog" element={<Layout><Blog /></Layout>} />
-        <Route path="/about" element={<Layout><About /></Layout>} />
-        <Route path="/contact" element={<Layout><Contact /></Layout>} />
+        {/* Blog Routes */}
+        <Route path="/" element={<BlogLayout><Home /></BlogLayout>} />
+        <Route path="/projects" element={<BlogLayout><Projects /></BlogLayout>} />
+        <Route path="/blog" element={<BlogLayout><Blog /></BlogLayout>} />
+        <Route path="/about" element={<BlogLayout><About /></BlogLayout>} />
+        <Route path="/contact" element={<BlogLayout><Contact /></BlogLayout>} />
+        
+        {/* System Routes */}
+        <Route path="/system/login" element={<Login />} />
+        <Route path="/system/register" element={<Register />} />
+        <Route path="/system/dashboard" element={<AuthGuard><SystemLayout><Dashboard /></SystemLayout></AuthGuard>} />
+        <Route path="/system/users" element={<AuthGuard><SystemLayout><Users /></SystemLayout></AuthGuard>} />
+        <Route path="/system/roles" element={<AuthGuard><SystemLayout><Roles /></SystemLayout></AuthGuard>} />
+        <Route path="/system/departments" element={<AuthGuard><SystemLayout><Departments /></SystemLayout></AuthGuard>} />
+        <Route path="/system/menus" element={<AuthGuard><SystemLayout><Menus /></SystemLayout></AuthGuard>} />
+        <Route path="/system/dictionaries" element={<AuthGuard><SystemLayout><Dictionaries /></SystemLayout></AuthGuard>} />
       </Routes>
     </>
   )

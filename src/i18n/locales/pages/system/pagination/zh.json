@@ -1,0 +1,12 @@
+{
+  "showing": "显示第 {start} 至 {end} 条，共 {total} 条",
+  "firstPage": "首页",
+  "prevPage": "上一页",
+  "nextPage": "下一页",
+  "lastPage": "末页",
+  "page": "页",
+  "of": "共",
+  "perPage": "条/页",
+  "jump": "跳至",
+  "total": "共 {total} 条"
+} 

@@ -1,0 +1,30 @@
+{
+  "title": "System",
+  "home": "Home",
+  "dashboard": "Dashboard",
+  "users": "Users",
+  "roles": "Roles",
+  "departments": "Departments",
+  "menus": "Menus",
+  "dictionaries": "Dictionaries",
+  "settings": "Settings",
+  "systemManagement": "System Management",
+  "search": "Search",
+  "searchPlaceholder": "Search...",
+  "breadcrumb": {
+    "home": "Home"
+  },
+  "theme": "Theme",
+  "language": "Language",
+  "notifications": "Notifications",
+  "profile": "Profile",
+  "logout": "Logout",
+  "admin": "Admin",
+  "chooseTheme": "Choose Theme",
+  "markAllRead": "Mark All Read",
+  "viewAll": "View All",
+  "systemSettings": "System Settings",
+  "backToBlog": "Back to Blog",
+  "version": "Version",
+  "languageSettings": "Language Settings"
+} 

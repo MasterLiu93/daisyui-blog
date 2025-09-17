@@ -1,0 +1,70 @@
+{
+  "title": "Menu Management",
+  "columns": {
+    "menuName": "Menu Name",
+    "icon": "Icon",
+    "sort": "Sort",
+    "perms": "Permissions",
+    "path": "Route Path",
+    "component": "Component Path",
+    "menuType": "Menu Type",
+    "visible": "Visible",
+    "status": "Status",
+    "actions": "Actions",
+    "remark": "Remark"
+  },
+  "actions": {
+    "addMenu": "Add Menu",
+    "edit": "Edit",
+    "delete": "Delete",
+    "search": "Search",
+    "reset": "Reset",
+    "title": "Actions"
+  },
+  "form": {
+    "menuName": "Menu Name",
+    "parentMenu": "Parent Menu",
+    "menuType": "Menu Type",
+    "icon": "Icon",
+    "sort": "Sort",
+    "path": "Route Path",
+    "component": "Component Path",
+    "permissions": "Permissions",
+    "visible": "Visible",
+    "status": "Status",
+    "submit": "Submit",
+    "cancel": "Cancel"
+  },
+  "types": {
+    "directory": "Directory",
+    "menu": "Menu",
+    "button": "Button"
+  },
+  "messages": {
+    "confirmDelete": "Are you sure you want to delete this menu?",
+    "deleteSuccess": "Menu deleted successfully",
+    "addSuccess": "Menu added successfully",
+    "editSuccess": "Menu updated successfully",
+    "error": "An error occurred",
+    "deleteError": "Cannot delete menu with children"
+  },
+  "validation": {
+    "menuNameRequired": "Menu name is required",
+    "pathRequired": "Route path is required",
+    "componentRequired": "Component path is required"
+  },
+  "directory": "Directory",
+  "menu": "Menu",
+  "button": "Button",
+  "enabled": "Enabled",
+  "disabled": "Disabled",
+  "yes": "Yes",
+  "no": "No",
+  "allStatus": "All Status",
+  "deleteConfirm": "Are you sure you want to delete this menu?",
+  "deleteError": "Failed to delete menu",
+  "noMenusFound": "No menus found",
+  "placeholder": {
+    "menuName": "Please enter menu name"
+  }
+} 

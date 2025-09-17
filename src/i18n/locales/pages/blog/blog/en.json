@@ -1,0 +1,103 @@
+{
+  "title": "Blog",
+  "subtitle": "Thoughts, ideas, and discoveries",
+  "badge": "Blog",
+  "latestPosts": "Latest Posts",
+  "featuredPosts": "Featured Posts",
+  "recentPosts": "Recent Posts",
+  "readingTime": "min read",
+  "readMore": "Read More",
+  "readTime": "min read",
+  "publishDate": "Published on",
+  "authorBy": "By",
+  "popularTags": "Popular Tags",
+  "allTags": "All Tags",
+  "search": "Search in Blog",
+  "searchPlaceholder": "Search articles...",
+  "featured": "Featured",
+  "sharePost": "Share Post",
+  "subscribeTitle": "Subscribe for Updates",
+  "subscribeDescription": "Regularly receive my latest blog posts, project updates, and technical insights",
+  "subscribePlaceholder": "your-email@example.com",
+  "subscribeButton": "Subscribe",
+  "subscribeSuccess": "Thanks for subscribing!",
+  "subscribePrivacy": "We respect your privacy and never send spam",
+  "filter": {
+    "search": "Search articles...",
+    "reset": "Reset Filters",
+    "category": "Category",
+    "date": "Date",
+    "tag": "Tag"
+  },
+  "categories": {
+    "all": "All",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "design": "UI/UX Design",
+    "tools": "Tools & Methodology",
+    "career": "Career Growth",
+    "ai": "AI",
+    "security": "Security"
+  },
+  "about": {
+    "title": "About the Author",
+    "description": "Full-stack engineer focused on creating high-quality digital products",
+    "readMore": "Learn More"
+  },
+  "posts": {
+    "post1": {
+      "title": "Best Practices for State Management in React",
+      "subtitle": "From Context API to Redux and Zustand",
+      "excerpt": "Explore different state management solutions, from Context API to Redux and Zustand",
+      "content": "As React applications become increasingly complex, state management emerges as one of the core challenges facing frontend developers. This article delves deep into popular state management solutions in the React ecosystem, including the built-in Context API, Redux, Zustand, Jotai, and Recoil, analyzing their advantages, disadvantages, applicable scenarios, and performance characteristics. Through example code and performance comparisons, we'll help you make appropriate state management choices in your projects and provide practical best practices advice to avoid common state management pitfalls. Whether you're a React novice or an experienced developer, this article will help you optimize your application's state management strategy."
+    },
+    "post2": {
+      "title": "Advanced TypeScript Types and Patterns",
+      "subtitle": "Type Techniques for Improving Code Quality",
+      "excerpt": "Dive into TypeScript's type system, master advanced types and design patterns",
+      "content": "TypeScript's type system is powerful and flexible, but many developers only use its basic features. This article explores TypeScript's advanced type features, including conditional types, mapped types, type guards, generic constraints, and utility types. We'll cover how to use these advanced features to create custom type utilities, implement type-safe API designs, and enhance code readability and maintainability. Through practical code examples and common design patterns, this article will help you elevate your TypeScript skills and write more robust, safer code. Mastering these advanced type techniques will take your development efficiency and code quality to new heights."
+    },
+    "post3": {
+      "title": "Evolution of CSS Layout Techniques",
+      "subtitle": "From Tables to Flexbox and Grid",
+      "excerpt": "From tables to Flexbox and Grid, the evolution of CSS layout technologies",
+      "content": "CSS layout techniques have undergone a long evolution from table layouts and float positioning to modern Flexbox and Grid. This article reviews this development process and delves into the advantages and appropriate scenarios of Flexbox and Grid, as well as how to combine these two technologies to create complex and flexible layouts. The article provides practical cases showing how to solve common layout challenges and how to leverage the latest CSS features to improve development efficiency and user experience. Whether you're a CSS novice or an experienced developer, understanding the evolution and principles of these layout technologies can help you build modern responsive web interfaces more effectively."
+    },
+    "post4": {
+      "title": "Server Components: The Future of Next.js",
+      "subtitle": "Exploring Server Components in React and Next.js",
+      "excerpt": "Deep understanding of React Server Components and their application in Next.js apps",
+      "content": "Server Components represent a significant innovation in the React framework, with particularly widespread application in the Next.js ecosystem. This article explores the core concepts of Server Components, how they work, and how they change the way we build React applications. We'll analyze the differences between Server Components and Client Components, their use cases, and how to effectively combine these two types of components in Next.js projects. Through specific examples, we'll demonstrate how to leverage Server Components to optimize application performance, improve SEO, and simplify data fetching processes. At the same time, we'll discuss potential challenges in adopting Server Components and their solutions. For developers wanting to master the latest developments in React and Next.js, understanding Server Components will be an essential skill."
+    },
+    "post5": {
+      "title": "Understanding Core Web Vitals for Performance Optimization",
+      "subtitle": "Improving Core Web Metrics for Better User Experience",
+      "excerpt": "How to measure and optimize core web metrics like LCP, FID, and CLS",
+      "content": "Google's Core Web Vitals are important metrics for measuring website user experience. This article will explain in detail the meaning, measurement methods, and optimization strategies for key metrics such as LCP (Largest Contentful Paint), FID (First Input Delay), and CLS (Cumulative Layout Shift). We'll explore how to use Chrome DevTools, Lighthouse, and the Web Vitals library to monitor these metrics, and provide practical optimization tips covering image optimization, JavaScript execution, CSS loading, font handling, and more. By optimizing these metrics, you can significantly improve your website's user experience and search engine rankings."
+    },
+    "post6": {
+      "title": "How AI Code Assistants are Transforming Development Workflows",
+      "subtitle": "The Programming Revolution from GitHub Copilot to ChatGPT",
+      "excerpt": "How AI tools enhance developer productivity and change programming practices",
+      "content": "AI code assistants are revolutionizing the way software development works. This article analyzes the advantages, disadvantages, and usage strategies of tools like GitHub Copilot, ChatGPT, and Codeium, discussing how they help write code, generate tests, explain complex logic, and debug issues. We'll share real-world examples, best practices, and considerations to help you effectively integrate these tools into your development process. AI won't replace programmers, but developers who skillfully use AI tools will be more efficient and creative than others – this article will help you become such a developer."
+    },
+    "post7": {
+      "title": "Micro-Frontend Architecture: Practice and Challenges",
+      "subtitle": "Building Scalable Large Frontend Applications",
+      "excerpt": "Core concepts, implementation methods, and best practices for micro-frontend architecture",
+      "content": "As frontend applications grow in scale and complexity, micro-frontend architecture has become an important strategy for addressing challenges in large applications. This article will deeply explore the core concepts of micro-frontends, main implementation methods (including Single-SPA, Module Federation, iframes, etc.), and their advantages and disadvantages. We'll analyze technology choices, team collaboration patterns, and common challenges in real-world cases, such as style isolation, state sharing, and performance optimization. Through this article, you'll understand when it's appropriate to adopt a micro-frontend architecture and how to design a loosely coupled, easily maintainable, and high-performing micro-frontend system."
+    },
+    "post8": {
+      "title": "WebAssembly: High-Performance Computing in the Browser",
+      "subtitle": "Bringing C, Rust, and Go Code to Web Applications",
+      "excerpt": "How WebAssembly enables near-native performance in web applications",
+      "content": "WebAssembly (Wasm) is changing the performance boundaries of web applications. This article will introduce the working principles, use cases, and development toolchains of WebAssembly, and discuss how to compile code from languages like C/C++, Rust, and Go into Wasm and integrate it into web applications. We'll demonstrate through practical examples how Wasm can be used for high-performance scenarios such as image processing, game development, and scientific computing, and analyze interoperability with JavaScript, memory management, and debugging techniques. Whether you're a frontend developer or a backend engineer, understanding WebAssembly will help you build faster, more powerful web applications."
+    },
+    "post9": {
+      "title": "Web Application Security Best Practices",
+      "subtitle": "Protecting Your Frontend Applications from Common Attacks",
+      "excerpt": "Practical strategies for defending against XSS, CSRF, and other web security threats",
+      "content": "Web security is a critical area that every developer should take seriously. This article comprehensively introduces the main security threats faced by modern web applications, including XSS, CSRF, clickjacking, injection attacks, etc., and provides practical defense strategies and best practices. We'll discuss topics such as Content Security Policy (CSP), secure HTTP headers, authentication and authorization mechanisms, secure API design, and more, demonstrating through code examples how to implement these security measures in frameworks like React and Vue. Mastering this knowledge will help you build more secure and reliable web applications, protecting user data and business assets."
+    }
+  }
+}

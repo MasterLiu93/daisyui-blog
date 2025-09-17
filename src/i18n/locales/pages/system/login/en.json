@@ -1,0 +1,23 @@
+{
+  "title": "Login",
+  "welcome": "Welcome to the System",
+  "username": "Username",
+  "password": "Password",
+  "rememberMe": "Remember me",
+  "forgotPassword": "Forgot password?",
+  "login": "Login",
+  "register": "Register now",
+  "noAccount": "Don't have an account?",
+  "captcha": "Verification Code",
+  "clickToRefresh": "Click to refresh",
+  "errors": {
+    "usernameRequired": "Please enter your username",
+    "passwordRequired": "Please enter your password",
+    "captchaRequired": "Please enter verification code",
+    "invalidCredentials": "Invalid username or password",
+    "accountLocked": "Your account has been locked",
+    "invalidCaptcha": "Invalid verification code"
+  },
+  "loginSuccess": "Login successful",
+  "loggingIn": "Logging in..."
+} 

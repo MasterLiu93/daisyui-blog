@@ -1,0 +1,56 @@
+{
+  "actions": {
+    "title": "操作",
+    "search": "查询",
+    "reset": "重置",
+    "add": "新增",
+    "edit": "编辑",
+    "delete": "删除",
+    "view": "查看",
+    "submit": "提交",
+    "cancel": "取消",
+    "confirm": "确认",
+    "save": "保存",
+    "back": "返回",
+    "export": "导出",
+    "import": "导入",
+    "refresh": "刷新",
+    "batchDelete": "批量删除"
+  },
+  "status": {
+    "active": "启用",
+    "inactive": "停用",
+    "enabled": "启用",
+    "disabled": "禁用",
+    "yes": "是",
+    "no": "否"
+  },
+  "messages": {
+    "loading": "加载中...",
+    "saving": "保存中...",
+    "processing": "处理中...",
+    "success": "操作成功",
+    "error": "操作失败",
+    "confirmDelete": "确定要删除此项吗？",
+    "confirmBatchDelete": "确定要删除选中项吗？",
+    "noData": "暂无数据",
+    "required": "此项为必填项"
+  },
+  "form": {
+    "required": "必填",
+    "optional": "选填",
+    "placeholder": "请输入{field}",
+    "select": "请选择{field}",
+    "inputPlaceholder": "请输入"
+  },
+  "table": {
+    "columns": "列",
+    "filter": "筛选",
+    "clearFilter": "清除筛选",
+    "emptyText": "暂无数据",
+    "selectAll": "全选",
+    "deselectAll": "取消全选"
+  },
+  "loading": "加载中...",
+  "inputPlaceholder": "请输入..."
+} 

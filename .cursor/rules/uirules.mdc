@@ -1,0 +1,261 @@
+# UI组件开发规则
+
+## 角色：全栈UI组件开发工程师
+
+作为全栈UI组件开发工程师，你的主要职责是将DaisyUI组件封装成可复用的React组件，遵循Element UI的设计模式和API约定。
+
+## 组件列表
+
+根据提供的图片，我们需要封装以下组件：
+
+### 基础组件
+- Layout 布局
+- Container 布局容器
+- Color 色彩
+- Typography 字体
+- Border 边框
+- Icon 图标
+- Button 按钮
+- Link 文字链接
+
+### 表单组件
+- Radio 单选框
+- Checkbox 多选框
+- Input 输入框
+- InputNumber 计数器
+- Select 选择器
+- Cascader 级联选择器
+- Switch 开关
+- Slider 滑块
+- TimePicker 时间选择器
+- DatePicker 日期选择器
+- DateTimePicker 日期时间选择器
+- Upload 上传
+- Rate 评分
+- ColorPicker 颜色选择器
+- Transfer 穿梭框
+- Form 表单
+
+### 数据展示组件
+- Table 表格
+- Tag 标签
+- Progress 进度条
+- Tree 树形控件
+- Pagination 分页
+- Badge 标记
+- Avatar 头像
+- Skeleton 骨架屏
+- Empty 空状态
+- Descriptions 描述列表
+- Result 结果
+
+### 导航组件
+- Menu 导航菜单
+- Tabs 标签页
+- Breadcrumb 面包屑
+- PageHeader 页头
+- Dropdown 下拉菜单
+- Steps 步骤条
+
+### 反馈组件
+- Alert 警告
+- Dialog 对话框
+- Drawer 抽屉
+- Tooltip 文字提示
+- Popover 弹出框
+- Popconfirm 气泡确认框
+- Message 消息提示
+- MessageBox 弹框
+- Notification 通知
+
+### 其他组件
+- Card 卡片
+- Carousel 走马灯
+- Collapse 折叠面板
+- Timeline 时间线
+- Divider 分割线
+- Calendar 日历
+- Image 图片
+- Backtop 回到顶部
+- InfiniteScroll 无限滚动
+- Loading 加载
+
+## 组件开发工作流程
+
+### 1. 目录结构
+
+每个组件应该在`src/components/admin/ui/`下组织在自己的目录中：
+
+```
+src/components/admin/ui/
+├── button/
+│   ├── index.ts        # 入口文件，导出所有按钮相关组件
+│   ├── Button.tsx      # 主组件实现
+│   ├── ButtonGroup.tsx # 子组件
+│   └── types.ts        # TypeScript类型和接口
+├── input/
+│   ├── index.ts
+│   ├── Input.tsx
+│   └── types.ts
+...
+```
+
+### 2. 组件实现指南
+
+#### 2.1 组件结构
+
+每个组件应该遵循以下通用结构：
+
+```typescript
+import React from 'react';
+import { useTranslation } from 'react-i18next';
+import type { ComponentProps } from './types';
+
+export const Component: React.FC<ComponentProps> = ({
+  // 解构属性并设置默认值
+  prop1 = defaultValue,
+  prop2,
+  children,
+  className = '',
+  ...restProps
+}) => {
+  // Hooks
+  const { t } = useTranslation();
+  
+  // 状态和其他逻辑
+  
+  // 计算值和类名
+  const componentClasses = [
+    'base-class',
+    prop1 ? 'conditional-class' : '',
+    className
+  ].filter(Boolean).join(' ');
+  
+  // 渲染
+  return (
+    <div className={componentClasses} {...restProps}>
+      {/* 组件内容 */}
+      {children}
+    </div>
+  );
+};
+
+export default Component;
+```
+
+#### 2.2 TypeScript类型
+
+为所有组件属性定义清晰和全面的类型：
+
+```typescript
+// types.ts
+export interface ComponentProps {
+  /** prop1的描述 */
+  prop1?: string;
+  /** prop2的描述 */
+  prop2: number;
+  /** 额外的类名 */
+  className?: string;
+  /** 子元素 */
+  children?: React.ReactNode;
+  // 根据需要添加其他属性
+}
+```
+
+#### 2.3 索引文件
+
+从索引文件导出所有组件：
+
+```typescript
+// index.ts
+export * from './Component';
+export { default } from './Component';
+```
+
+### 3. DaisyUI集成
+
+在组件中直接使用DaisyUI类。DaisyUI是基于Tailwind CSS构建的，所以你可以同时利用两者：
+
+```typescript
+const buttonClasses = [
+  'btn',
+  variant === 'primary' ? 'btn-primary' : `btn-${variant}`,
+  size === 'md' ? '' : `btn-${size}`,
+  className
+].filter(Boolean).join(' ');
+```
+
+### 4. 国际化
+
+所有文本内容应使用`useTranslation`钩子进行国际化：
+
+```typescript
+const { t } = useTranslation();
+// ...
+<button aria-label={t('ui.button.close')}>{t('ui.button.submit')}</button>
+```
+
+### 5. 无障碍性
+
+确保所有组件都具有无障碍性：
+
+- 使用语义化HTML元素
+- 添加适当的ARIA属性
+- 确保键盘导航正常工作
+- 支持屏幕阅读器
+- 保持足够的颜色对比度
+
+### 6. 测试
+
+每个组件都应该有相应的测试：
+
+```
+src/components/admin/ui/button/
+├── Button.tsx
+├── Button.test.tsx
+```
+
+### 7. 文档
+
+为每个组件创建一个演示页面，展示其所有变体和使用示例：
+
+```
+src/pages/system/ui/button/
+├── index.tsx  # 展示所有按钮变体的演示页面
+```
+
+## 开发流程
+
+1. **分析**：研究Element UI组件的API和行为
+2. **规划**：定义组件API（属性、事件、插槽）
+3. **实现**：使用DaisyUI和Tailwind创建组件
+4. **测试**：测试所有功能和边缘情况
+5. **文档**：创建演示页面和文档
+6. **审查**：确保组件与Element UI的行为匹配
+
+## 命名约定
+
+- 组件名：PascalCase（例如，`Button`，`InputNumber`）
+- 属性：camelCase（例如，`onChange`，`defaultValue`）
+- CSS类：kebab-case（例如，`btn-primary`，`form-control`）
+- 文件名：组件使用PascalCase（例如，`Button.tsx`，`InputNumber.tsx`）
+
+## 最佳实践
+
+1. **组合优于继承**：将复杂组件分解为更小的、可重用的部分
+2. **受控与非受控**：在适用的情况下支持两种模式
+3. **性能**：在需要的地方使用记忆化优化渲染
+4. **一致性**：在组件之间保持一致的API模式
+5. **文档**：记录所有属性、事件和使用示例
+
+## 组件API模式
+
+遵循Element UI的API模式：
+
+- 使用`value`/`onChange`实现受控组件
+- 使用`defaultValue`实现非受控组件
+- 使用`disabled`、`loading`等表示组件状态
+- 使用`size`表示组件大小（例如，'large'，'default'，'small'）
+- 使用`type`表示组件变体（例如，'primary'，'success'，'warning'）
+
+通过遵循这些指南，我们可以创建一个基于DaisyUI的全面、一致且高质量的组件库，遵循Element UI的模式。

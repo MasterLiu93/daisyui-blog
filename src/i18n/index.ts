@@ -6,17 +6,37 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 import enCommon from './locales/common/en.json';
 import zhCommon from './locales/common/zh.json';
 
-// 导入各个页面的翻译文件
-import enHome from './locales/pages/home/en.json';
-import zhHome from './locales/pages/home/zh.json';
-import enAbout from './locales/pages/about/en.json';
-import zhAbout from './locales/pages/about/zh.json';
-import enProjects from './locales/pages/projects/en.json';
-import zhProjects from './locales/pages/projects/zh.json';
-import enBlog from './locales/pages/blog/en.json';
-import zhBlog from './locales/pages/blog/zh.json';
-import enContact from './locales/pages/contact/en.json';
-import zhContact from './locales/pages/contact/zh.json';
+// 导入blog页面的翻译文件
+import enBlogHome from './locales/pages/blog/home/en.json';
+import zhBlogHome from './locales/pages/blog/home/zh.json';
+import enBlogAbout from './locales/pages/blog/about/en.json';
+import zhBlogAbout from './locales/pages/blog/about/zh.json';
+import enBlogProjects from './locales/pages/blog/projects/en.json';
+import zhBlogProjects from './locales/pages/blog/projects/zh.json';
+import enBlogBlog from './locales/pages/blog/blog/en.json';
+import zhBlogBlog from './locales/pages/blog/blog/zh.json';
+import enBlogContact from './locales/pages/blog/contact/en.json';
+import zhBlogContact from './locales/pages/blog/contact/zh.json';
+
+// 导入system页面的翻译文件
+import enSystemDashboard from './locales/pages/system/dashboard/en.json';
+import zhSystemDashboard from './locales/pages/system/dashboard/zh.json';
+import enSystemUsers from './locales/pages/system/users/en.json';
+import zhSystemUsers from './locales/pages/system/users/zh.json';
+import enSystemRoles from './locales/pages/system/roles/en.json';
+import zhSystemRoles from './locales/pages/system/roles/zh.json';
+import enSystemDept from './locales/pages/system/dept/en.json';
+import zhSystemDept from './locales/pages/system/dept/zh.json';
+import enSystemMenu from './locales/pages/system/menu/en.json';
+import zhSystemMenu from './locales/pages/system/menu/zh.json';
+import enSystemDict from './locales/pages/system/dict/en.json';
+import zhSystemDict from './locales/pages/system/dict/zh.json';
+import enSystemLogin from './locales/pages/system/login/en.json';
+import zhSystemLogin from './locales/pages/system/login/zh.json';
+import enSystemRegister from './locales/pages/system/register/en.json';
+import zhSystemRegister from './locales/pages/system/register/zh.json';
+import enSystemCommon from './locales/pages/system/common/en.json';
+import zhSystemCommon from './locales/pages/system/common/zh.json';
 
 // 初始化i18next
 i18n
@@ -30,21 +50,51 @@ i18n
       en: {
         translation: {
           ...enCommon,
-          home: enHome,
-          about: enAbout,
-          projects: enProjects,
-          blog: enBlog,
-          contact: enContact
+          // Blog namespace
+          blog: {
+            home: enBlogHome,
+            about: enBlogAbout,
+            projects: enBlogProjects,
+            blog: enBlogBlog,
+            contact: enBlogContact
+          },
+          // System namespace
+          system: {
+            common: enSystemCommon,
+            dashboard: enSystemDashboard,
+            users: enSystemUsers,
+            roles: enSystemRoles,
+            dept: enSystemDept,
+            menu: enSystemMenu,
+            dict: enSystemDict,
+            login: enSystemLogin,
+            register: enSystemRegister
+          }
         }
       },
       zh: {
         translation: {
           ...zhCommon,
-          home: zhHome,
-          about: zhAbout,
-          projects: zhProjects,
-          blog: zhBlog,
-          contact: zhContact
+          // Blog namespace
+          blog: {
+            home: zhBlogHome,
+            about: zhBlogAbout,
+            projects: zhBlogProjects,
+            blog: zhBlogBlog,
+            contact: zhBlogContact
+          },
+          // System namespace
+          system: {
+            common: zhSystemCommon,
+            dashboard: zhSystemDashboard,
+            users: zhSystemUsers,
+            roles: zhSystemRoles,
+            dept: zhSystemDept,
+            menu: zhSystemMenu,
+            dict: zhSystemDict,
+            login: zhSystemLogin,
+            register: zhSystemRegister
+          }
         }
       }
     },

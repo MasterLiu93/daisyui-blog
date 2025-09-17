@@ -1,0 +1,30 @@
+{
+  "title": "系统",
+  "home": "首页",
+  "dashboard": "仪表盘",
+  "users": "用户管理",
+  "roles": "角色管理",
+  "departments": "部门管理",
+  "menus": "菜单管理",
+  "dictionaries": "字典管理",
+  "settings": "系统设置",
+  "systemManagement": "系统管理",
+  "search": "搜索",
+  "searchPlaceholder": "搜索...",
+  "breadcrumb": {
+    "home": "首页"
+  },
+  "theme": "主题",
+  "language": "语言",
+  "notifications": "通知",
+  "profile": "个人信息",
+  "logout": "退出登录",
+  "admin": "管理员",
+  "chooseTheme": "选择主题",
+  "markAllRead": "标记所有已读",
+  "viewAll": "查看全部",
+  "systemSettings": "系统设置",
+  "backToBlog": "返回博客",
+  "version": "版本",
+  "languageSettings": "语言设置"
+} 

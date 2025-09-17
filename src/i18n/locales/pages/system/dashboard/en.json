@@ -1,0 +1,35 @@
+{
+  "title": "Dashboard",
+  "totalUsers": "Total Users",
+  "activeUsers": "Active Users",
+  "newUsers": "New Users",
+  "systemAnnouncements": "System Announcements",
+  "recentActivities": "Recent Activities",
+  "quickActions": "Quick Actions",
+  "viewMore": "View More",
+  "vsLastWeek": "vs last week",
+  "statistics": {
+    "users": "users",
+    "resourceUsage": "Resource Usage",
+    "systemPerformance": "System Performance",
+    "last24Hours": "Last 24 Hours",
+    "cpu": "CPU",
+    "memory": "Memory",
+    "disk": "Disk",
+    "network": "Network",
+    "responseTime": "Response Time",
+    "throughput": "Throughput",
+    "errorRate": "Error Rate"
+  },
+  "actions": {
+    "addUser": "Add User",
+    "addRole": "Add Role",
+    "addDepartment": "Add Department",
+    "viewProfile": "View Profile"
+  },
+  "announcements": {
+    "maintenance": "System Maintenance",
+    "update": "System Update",
+    "welcome": "Welcome"
+  }
+} 
